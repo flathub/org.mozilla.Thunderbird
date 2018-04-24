@@ -11,9 +11,9 @@
     <release date="2017-11-23" urgency="medium" version="52.5.0"/>
     <release date="2017-10-06" urgency="medium" version="52.4.0"/>
   </releases>
-  <summary>Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!</summary>
+  <summary>Email client</summary>
   <description>
-    <p>Mozilla Thunderbird is a free, open-source, and cross-platform email, news, RSS, and chat client developed by the Mozilla Foundation.</p>
+    <p>Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, and chat client developed by the Mozilla Foundation.</p>
   </description>
   <url type="homepage">https://www.thunderbird.net/</url>
   <screenshots>
