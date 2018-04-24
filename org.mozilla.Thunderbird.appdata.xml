@@ -15,7 +15,7 @@
   <description>
     <p>Mozilla Thunderbird is a free, open-source, and cross-platform email, news, RSS, and chat client developed by the Mozilla Foundation.</p>
   </description>
-  <url type="homepage">https://www.mozilla.org/en-US/thunderbird/</url>
+  <url type="homepage">https://www.thunderbird.net</url>
   <screenshots>
     <screenshot type="default">https://i.imgur.com/W3zlfng.png</screenshot>
   </screenshots>
