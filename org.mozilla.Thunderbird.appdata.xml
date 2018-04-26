@@ -1,32 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>org.mozilla.Thunderbird</id>
-  <name>Thunderbird</name>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>MPL-2.0</project_license>
-  <releases>
-    <release date="2018-03-23" urgency="medium" version="52.7.0"/>
-    <release date="2018-01-25" urgency="medium" version="52.6.0"/>
-    <release date="2017-12-22" urgency="critical" version="52.5.2"/>
-    <release date="2017-11-23" urgency="medium" version="52.5.0"/>
-    <release date="2017-10-06" urgency="medium" version="52.4.0"/>
-  </releases>
-  <summary>Email Client</summary>
+  <name>Thunderbird</name>
+  <summary>Email client</summary>
   <description>
     <p>Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, and chat client developed by the Mozilla Foundation.</p>
   </description>
+  <categories>
+    <category>Calendar</category>
+    <category>Chat</category>
+    <category>Communication</category>
+    <category>ContactManagement</category>
+    <category>Email</category>
+    <category>Feed</category>
+    <category>InstantMessaging</category>
+    <category>IRCClient</category>
+    <category>News</category>
+    <category>Office</category>
+    <category>Productivity</category>
+  </categories>
   <url type="homepage">https://www.thunderbird.net/</url>
   <url type="bugtracker">https://bugzilla.mozilla.org/</url>
   <url type="faq">https://support.mozilla.org/kb/thunderbird-faq</url>
   <url type="help">https://support.mozilla.org/questions/thunderbird</url>
   <url type="donation">https://donate.mozilla.org/thunderbird/</url>
   <url type="translate">https://developer.mozilla.org/docs/Mozilla/Projects/Thunderbird/Thunderbird_Localization</url>
-  <screenshots>
-    <screenshot type="default">https://i.imgur.com/W3zlfng.png</screenshot>
-  </screenshots>
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
-  <developer_name>Mozilla</developer_name>
+
+  <releases>
+    <release version="52.7.0" date="2018-03-23" urgency="medium" />
+    <release version="52.6.0" date="2018-01-25" urgency="medium" />
+    <release version="52.5.2" date="2017-12-22" urgency="critical" />
+    <release version="52.5.0" date="2017-11-23" urgency="medium" />
+    <release version="52.4.0" date="2017-10-06" urgency="medium" />
+  </releases>
+
+  <project_group>Mozilla</project_group>
+  <project_license>MPL-2.0</project_license>
+  <developer_name>Mozilla Foundation</developer_name>
+
+  <screenshots>
+    <screenshot xml:lang="cy">
+      <caption>Cymreag</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/cy/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="de">
+      <caption>Deutsch</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/de/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot type="default" xml:lang="en-US">
+      <caption>English</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/en-US/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="es">
+      <caption>Español</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/es-ES/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="fr">
+      <caption>Français</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/fr/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="it">
+      <caption>Italiano</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/it/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="ja">
+      <caption>日本語</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/ja/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="pl">
+      <caption>Polski</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/pl/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="pt-BR">
+      <caption>Português (do Brasil)</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/pt-BR/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+    <screenshot xml:lang="ru">
+      <caption>Русский</caption>
+      <image type="source">https://www.thunderbird.net/media/img/l10n/ru/thunderbird/landing/screenshot-linux.png</image>
+    </screenshot>
+  </screenshots>
+
   <update_contact>adrianlucrececeleste@airmail.cc</update_contact>
+
+  <suggests>
+    <id>org.libreoffice.LibreOffice</id>
+  </suggests>
+
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -49,4 +111,5 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+
 </component>
