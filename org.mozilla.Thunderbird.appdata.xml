@@ -1,12 +1,34 @@
+<!-- https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html -->
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>org.mozilla.Thunderbird</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>Thunderbird</name>
-  <summary>Email client</summary>
+  <!-- From the GNOME Software utility -->
+  <summary>Email, RSS and newsgroup client with integrated spam filter</summary>
+  <!-- From the official Thunderbird website https://www.thunderbird.net/ -->
+  <icon type="remote" width="180" height="180">https://www.thunderbird.net/media/img/thunderbird/ios-icon-180.png</icon>
+  <icon type="remote" width="196" height="196">https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
+  <icon type="remote" width="48" height="48">https://www.thunderbird.net/media/img/thunderbird/favicon.ico</icon>
+  <icon type="remote" width="120" height="120">https://www.thunderbird.net/media/img/thunderbird/landing/logo.png</icon>
   <description>
-    <p>Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, and chat client developed by the Mozilla Foundation.</p>
+    <!-- From the GNOME Software utility -->
+    <p>
+      Thunderbird is a full-featured email, RSS and newsgroup client that makes emailing safer, 
+      faster and easier than ever before. It supports different mail accounts (POP, IMAP, Gmail), 
+      has a simple mail account setup wizard, one-click address book, tabbed interface, an 
+      integrated learning spam filter, advanced search and indexing capabilities, and offers
+      easy organization of mails with tagging and virtual folders. It also features unrivaled 
+      extensibility.
+    </p>
+    <!-- From https://en.wikipedia.org/wiki/Mozilla_Thunderbird -->
+    <p>
+      Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, 
+      and chat client developed by the Mozilla Foundation.
+    </p>
   </description>
+  <!-- https://specifications.freedesktop.org/menu-spec/latest/apa.html -->
+  <!-- https://specifications.freedesktop.org/menu-spec/latest/apas02.html -->
   <categories>
     <category>Calendar</category>
     <category>Chat</category>
@@ -27,68 +49,69 @@
   <url type="donation">https://donate.mozilla.org/thunderbird/</url>
   <url type="translate">https://developer.mozilla.org/docs/Mozilla/Projects/Thunderbird/Thunderbird_Localization</url>
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
-
+ 
   <releases>
-    <release version="52.7.0" date="2018-03-23" urgency="medium" />
-    <release version="52.6.0" date="2018-01-25" urgency="medium" />
-    <release version="52.5.2" date="2017-12-22" urgency="critical" />
-    <release version="52.5.0" date="2017-11-23" urgency="medium" />
-    <release version="52.4.0" date="2017-10-06" urgency="medium" />
+    <release date="2018-03-23" version="52.7.0" urgency="medium" />
+    <release date="2018-01-25" version="52.6.0" urgency="medium" />
+    <release date="2017-12-22" version="52.5.2" urgency="critical" />
+    <release date="2017-11-23" version="52.5.0" urgency="medium" />
+    <release date="2017-10-06" version="52.4.0" urgency="medium" />
   </releases>
-
+ 
   <project_group>Mozilla</project_group>
   <project_license>MPL-2.0</project_license>
   <developer_name>Mozilla Foundation</developer_name>
-
+ 
+  <!-- From the official Thunderbird website https://www.thunderbird.net/ -->
   <screenshots>
     <screenshot xml:lang="cy">
       <caption>Cymreag</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/cy/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/cy/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="de">
       <caption>Deutsch</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/de/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/de/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot type="default" xml:lang="en-US">
       <caption>English</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/en-US/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/en-US/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="es">
       <caption>Español</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/es-ES/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/es-ES/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="fr">
       <caption>Français</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/fr/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/fr/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="it">
       <caption>Italiano</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/it/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/it/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="ja">
       <caption>日本語</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/ja/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ja/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="pl">
       <caption>Polski</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/pl/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pl/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="pt-BR">
       <caption>Português (do Brasil)</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/pt-BR/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pt-BR/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
     <screenshot xml:lang="ru">
       <caption>Русский</caption>
-      <image type="source">https://www.thunderbird.net/media/img/l10n/ru/thunderbird/landing/screenshot-linux.png</image>
+      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ru/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
   </screenshots>
-
+ 
   <update_contact>adrianlucrececeleste@airmail.cc</update_contact>
-
+ 
   <suggests>
     <id>org.libreoffice.LibreOffice</id>
   </suggests>
-
+ 
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
@@ -111,5 +134,5 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-
+ 
 </component>
