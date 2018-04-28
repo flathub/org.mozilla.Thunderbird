@@ -64,43 +64,43 @@
  
   <!-- From the official Thunderbird website https://www.thunderbird.net/ -->
   <screenshots>
-    <screenshot xml:lang="cy">
+    <screenshot>
       <caption>Cymreag</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/cy/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="de">
+    <screenshot>
       <caption>Deutsch</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/de/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot type="default" xml:lang="en-US">
+    <screenshot type="default">
       <caption>English</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/en-US/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="es">
+    <screenshot>
       <caption>Español</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/es-ES/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="fr">
+    <screenshot>
       <caption>Français</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/fr/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="it">
+    <screenshot>
       <caption>Italiano</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/it/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="ja">
+    <screenshot>
       <caption>日本語</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ja/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="pl">
+    <screenshot>
       <caption>Polski</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pl/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="pt-BR">
+    <screenshot>
       <caption>Português (do Brasil)</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pt-BR/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
-    <screenshot xml:lang="ru">
+    <screenshot>
       <caption>Русский</caption>
       <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ru/thunderbird/landing/screenshot-linux.png</image>
     </screenshot>
@@ -109,6 +109,7 @@
   <update_contact>adrianlucrececeleste@airmail.cc</update_contact>
  
   <suggests>
+    <id>org.gimp.GIMP</id>
     <id>org.libreoffice.LibreOffice</id>
   </suggests>
  
