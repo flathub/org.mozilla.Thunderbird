@@ -62,47 +62,69 @@
   <project_license>MPL-2.0</project_license>
   <developer_name>Mozilla Foundation</developer_name>
  
-  <!-- From the official Thunderbird website https://www.thunderbird.net/ -->
+  <!--
+    From the official Thunderbird website
+    https://www.thunderbird.net/
+    https://www.thunderbird.net/features/
+    https://github.com/thundernest/thunderbird-website/
+    https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
+  --> 
   <screenshots>
-    <screenshot xml:lang="cy">
-      <caption>Cymreag</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/cy/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot type="default">
+      <caption>Main</caption>
+      <image type="remote" width="2096" height="520">https://raw.githubusercontent.com/thundernest/thunderbird-website/master/media/img/l10n/en-US/thunderbird/landing/screenshot-linux-high-res.png</image>
     </screenshot>
-    <screenshot xml:lang="de">
-      <caption>Deutsch</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/de/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Mail Account Setup Wizard</caption>
+      <image type="remote" width="400" height="135">https://www.thunderbird.net/media/img/thunderbird/features/mail-account-setup.png</image>
     </screenshot>
-    <screenshot type="default" xml:lang="en-US">
-      <caption>English</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/en-US/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>One-click Address Book</caption>
+      <image type="remote" width="394" height="198">https://www.thunderbird.net/media/img/thunderbird/features/address-book.png</image>
     </screenshot>
-    <screenshot xml:lang="es">
-      <caption>Español</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/es-ES/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Attachment Reminder</caption>
+      <image type="remote" width="400" height="156">https://www.thunderbird.net/media/img/thunderbird/features/attachment-reminder.png</image>
     </screenshot>
-    <screenshot xml:lang="fr">
-      <caption>Français</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/fr/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Multiple-channel chat</caption>
+      <image type="remote" width="400" height="200">https://www.thunderbird.net/media/img/thunderbird/features/chatnetworks.png</image>
     </screenshot>
-    <screenshot xml:lang="it">
-      <caption>Italiano</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/it/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Tabbed Email</caption>
+      <image type="remote" width="420" height="200">https://www.thunderbird.net/media/img/thunderbird/features/newaustralis.png</image>
     </screenshot>
-    <screenshot xml:lang="ja">
-      <caption>日本語</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ja/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Search the Web</caption>
+      <image type="remote" width="446" height="193">https://www.thunderbird.net/media/img/thunderbird/features/search-the-web.png</image>
     </screenshot>
-    <screenshot xml:lang="pl">
-      <caption>Polski</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pl/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Quick Filter Toolbar</caption>
+      <image type="remote" width="400" height="132">https://www.thunderbird.net/media/img/thunderbird/features/quick-filter-toolbar.png</image>
     </screenshot>
-    <screenshot xml:lang="pt-BR">
-      <caption>Português (do Brasil)</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/pt-BR/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Search Tools</caption>
+      <image type="remote" width="340" height="201">https://www.thunderbird.net/media/img/thunderbird/features/search.png</image>
     </screenshot>
-    <screenshot xml:lang="ru">
-      <caption>Русский</caption>
-      <image type="remote" width="1048" height="260">https://www.thunderbird.net/media/img/l10n/ru/thunderbird/landing/screenshot-linux.png</image>
+    <screenshot>
+      <caption>Message Archive</caption>
+      <image type="remote" width="350" height="207">https://www.thunderbird.net/media/img/thunderbird/features/message-archive.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Activity Manager</caption>
+      <image type="remote" width="392" height="257">https://www.thunderbird.net/media/img/thunderbird/features/activity-manager.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Large Files Management</caption>
+      <image type="remote" width="420" height="198">https://www.thunderbird.net/media/img/thunderbird/features/filelink.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Robust Privacy and Do Not Track</caption>
+      <image type="remote" width="420" height="200">https://www.thunderbird.net/media/img/thunderbird/features/donottrack.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Phishing Protection</caption>
+      <image type="remote" width="400" height="141">https://www.thunderbird.net/media/img/thunderbird/features/phishing-protection.png</image>
     </screenshot>
   </screenshots>
  
