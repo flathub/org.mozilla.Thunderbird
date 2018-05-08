@@ -6,11 +6,6 @@
   <name>Thunderbird</name>
   <!-- From the GNOME Software utility -->
   <summary>Email, RSS and newsgroup client with integrated spam filter</summary>
-  <!-- From the official Thunderbird website https://www.thunderbird.net/ -->
-  <icon type="remote" width="180" height="180">https://www.thunderbird.net/media/img/thunderbird/ios-icon-180.png</icon>
-  <icon type="remote" width="196" height="196">https://www.thunderbird.net/media/img/thunderbird/favicon-196.png</icon>
-  <icon type="remote" width="48" height="48">https://www.thunderbird.net/media/img/thunderbird/favicon.ico</icon>
-  <icon type="remote" width="120" height="120">https://www.thunderbird.net/media/img/thunderbird/landing/logo.png</icon>
   <description>
     <!-- From the GNOME Software utility -->
     <p>
