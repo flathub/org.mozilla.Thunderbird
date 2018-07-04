@@ -13,7 +13,7 @@ for i in ar ast be bg bn-BD br ca cs cy da de dsb el en-GB en-US es-AR es-ES et 
             ],
             \"url\": \"https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/${release}/linux-x86_64/xpi/et.xpi\",
             \"sha256\": \"${checksum}\",
-            \"size\": \"${filesize}\"
+            \"size\": ${filesize}
         },"
     rm ${i}.xpi
 
