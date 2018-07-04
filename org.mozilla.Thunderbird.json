@@ -46,6 +46,26 @@
     ],
     "modules": [
         {
+            "name": "libxml",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://xmlsoft.org/sources/libxml2-2.7.2.tar.gz",
+                    "sha256": "c01bd621f771cdee349877f55cc841a1bdfb206b2cf5c9aa62aa6a9680e61980"
+                }
+            ]
+        },
+        {
+            "name": "xmlstarlet",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://cfhcable.dl.sourceforge.net/project/xmlstar/xmlstarlet/1.6.1/xmlstarlet-1.6.1.tar.gz",
+                    "sha256": "15d838c4f3375332fd95554619179b69e4ec91418a3a5296e7c631b7ed19e7ca"
+                }
+            ]
+        },
+        {
             "name": "autoconf-2.13",
             "cleanup": [ "*" ],
             "sources": [
