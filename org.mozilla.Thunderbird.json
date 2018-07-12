@@ -47,6 +47,9 @@
     "modules": [
         {
             "name": "libxml",
+            "config-opts": [
+                "--without-docbook"
+            ],
             "sources": [
                 {
                     "type": "archive",
