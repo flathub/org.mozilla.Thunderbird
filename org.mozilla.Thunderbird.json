@@ -142,8 +142,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "babc8c7230081ec21bd44190beb667611b566ea03f6f471e2170c9f76f78c8ea",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ar.xpi",
+                    "sha256": "4e126d51c735e53f4f5fb4bd09094802639b08d42c71b8513398d164946ebba0",
                     "size": 604235
                 },
                 {
@@ -152,9 +152,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "aeae96cf4baf67e1a193b4bb34b18e874f8e35025c64e51810b87b3c414b1490",
-                    "size": 541174
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ast.xpi",
+                    "sha256": "e74a25ef050bcaf60d086a4460e4ee0c5d24ca9e3298bf7ee510238a5767fa5e",
+                    "size": 541173
                 },
                 {
                     "type": "extra-data",
@@ -162,9 +162,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "16057e993a0f45387ab931d952af8ce1d9d22a60f211d836bad7f1d662855bbe",
-                    "size": 570932
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/be.xpi",
+                    "sha256": "eacf02c785ad21de6a8fa41dd7d96d0971b3057e427fc8f42425cf504ead2fc7",
+                    "size": 570931
                 },
                 {
                     "type": "extra-data",
@@ -172,8 +172,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "834245301cc7b83eb765c2c0f819cd6a7f76b92e39c6834c009020398c0b265e",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/bg.xpi",
+                    "sha256": "78094a216d300c803a9ffe1053485fc3520c5ac8a7a6880c164661d26446b772",
                     "size": 634897
                 },
                 {
@@ -182,9 +182,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "4fdfede1ce6ca6e44f1956f2ef49e934c601ac3b12c80a6ae5a5c6c47790c131",
-                    "size": 676901
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/bn-BD.xpi",
+                    "sha256": "e26b5dd3a73377568cc988f74ba103de1582b4327f7364d80ccf36bed75ce47e",
+                    "size": 676900
                 },
                 {
                     "type": "extra-data",
@@ -192,8 +192,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "93d28398d54d4e86780d479e5f239fdc516f0d5b51919777a61dface094a9512",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/br.xpi",
+                    "sha256": "039135e876e59e111322cb295706c44ec6de8db21ca8a3cd1d4df7b8e97c2561",
                     "size": 559380
                 },
                 {
@@ -202,8 +202,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "945f31b9409f6231cd3512bded82522e9ffec283387cbe51dcc83cda388d51b4",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ca.xpi",
+                    "sha256": "bd7a18290ee33e07a9b13b5ac56bae0e05e9e6eadf67bbc846e6fb9942ffecbe",
                     "size": 569910
                 },
                 {
@@ -212,9 +212,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "343b7da87749497ae9a19d3fada86b5138637680807f777628b54779f0cc1f4e",
-                    "size": 579150
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/cs.xpi",
+                    "sha256": "60bb32710a8afda584ca1c2566037f2489e190aaa15b9401eae0c3a6ea87f178",
+                    "size": 579149
                 },
                 {
                     "type": "extra-data",
@@ -222,8 +222,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "bf0043033fb140bedc7f0eecc557693c165c8e1ebb939018d0b2b1f7db7a1cad",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/cy.xpi",
+                    "sha256": "9c6f813b8bae310427729e6f87dd7541e9f0e5012684fcca79df839deffca49d",
                     "size": 554858
                 },
                 {
@@ -232,9 +232,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "b7ae6e521b213f239d08f2e5a080e7a36d488b3454013487527e933fa21be9ad",
-                    "size": 543335
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/da.xpi",
+                    "sha256": "412186224359be3848e12769d4c7564535b2442a785a509cfa95596ebe253c1c",
+                    "size": 543334
                 },
                 {
                     "type": "extra-data",
@@ -242,9 +242,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "962b47c41d92e2855dc3bf8bae82af2b604cfbbfdae53a7d8f7a2c0766d17195",
-                    "size": 555744
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/de.xpi",
+                    "sha256": "cd8d6b41e53b747e6731b6678ed78100ffeccac2d5b2548f6a817fc7178020cc",
+                    "size": 555743
                 },
                 {
                     "type": "extra-data",
@@ -252,9 +252,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "9825238e7cb785bac9cb94c32ab261dd0f7635df16ee96ce3cf092aab116e676",
-                    "size": 584578
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/dsb.xpi",
+                    "sha256": "208a209a8a930a7c21c0080a2446ce68cc2b69b92debbed9bb11263b6f8599a5",
+                    "size": 584582
                 },
                 {
                     "type": "extra-data",
@@ -262,9 +262,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "3954794a7df584d4a4e5561e32da2734561d7e7573a02d6d72a63b5afbe23fd4",
-                    "size": 662965
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/el.xpi",
+                    "sha256": "4547a29d281178642ab8e44c3a931256e9ab0f54c2b9e1d070c185f1bc4cd43b",
+                    "size": 662964
                 },
                 {
                     "type": "extra-data",
@@ -272,9 +272,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "78d9423758e8ae538affc4a8bed05ce0b6b27427a5333901d2387ddccdf5a30f",
-                    "size": 531234
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/en-GB.xpi",
+                    "sha256": "08fe22418c2f7eb1c905ba8fad946b1a225d8a22f137fcb84eb1c54db8f9d3d7",
+                    "size": 531233
                 },
                 {
                     "type": "extra-data",
@@ -282,8 +282,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "5af2a9b42d1b53917f62ded2eb219ffa0347d5aabf45926a3a04b00747a1f94e",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/en-US.xpi",
+                    "sha256": "8fa5e585b1b12a4ba7a839b8f2f6289620e47820fd0b3e5f62b9275788181893",
                     "size": 529123
                 },
                 {
@@ -292,8 +292,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "2ddff5be5bcc95eb64044b932f6a02aadefc5000c650ca0f49088035a8ae7dad",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/es-AR.xpi",
+                    "sha256": "02b6864746d5610ca0d4ca0cb6e66a3ec754646d35edd0f5c6865a00bd37150c",
                     "size": 565995
                 },
                 {
@@ -302,8 +302,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "fe57740f88c0d11e06a6e9e76f2a8e44e8a3cafd5f2eebdc4d3d81ea506e224b",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/es-ES.xpi",
+                    "sha256": "5a40466e88e3f0c0698281554d7ad2578c9447c04165cf8a2c88ca06c173753f",
                     "size": 445464
                 },
                 {
@@ -312,8 +312,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "1fe4460f0e4e7f2cada39298542eb4404553656a42743df8cb1d689676f125e5",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/et.xpi",
+                    "sha256": "eceffb5d80f109c0ee015d6818b7e9cf07f67bb56db455ec0bd3076c5879f316",
                     "size": 551661
                 },
                 {
@@ -322,8 +322,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "2a28960004cfa003f82f8a79488957f8059f3362d58226e4c246d0d9eb4786a0",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/eu.xpi",
+                    "sha256": "035a45221dccb53e4c4d0a23c67cc5130ef277307d4bc122db1fb4bd9b3726f6",
                     "size": 555536
                 },
                 {
@@ -332,9 +332,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "8187c48a4c00635faa8d2cb93cbf9f23919039c662a6c5b9be0dbbf28c2fbb7f",
-                    "size": 577561
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/fr.xpi",
+                    "sha256": "5e7d1db861d8035b8e2706ce3ca519a1a607e2fc73f4b7221e81b3cb3d233a66",
+                    "size": 577560
                 },
                 {
                     "type": "extra-data",
@@ -342,29 +342,19 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "44f394c5c84f1b5dcf7ce08b13a227170196a6b284b3249548830336be535a4e",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/fi.xpi",
+                    "sha256": "a8bcef75989b924a29f2433c30d00afbf6ffc20bcdffd4eadc2c78508958d205",
                     "size": 550669
                 },
                 {
                     "type": "extra-data",
-                    "filename": "fy-NL.xpi",
+                    "filename": "fy-NL,ga-IE.xpi",
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "f64c745089a68b47664569fe6eb0ea8198dfcf28009723b97e8b242fb27287f7",
-                    "size": 563632
-                },
-                {
-                    "type": "extra-data",
-                    "filename": "ga-IE.xpi",
-                    "only-arches": [
-                        "x86_64"
-                    ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "e5d64beeba305fc84e6b2eb3b2a76e91f82d40b61f0d392e4a5e3f40f94e98af",
-                    "size": 583556
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/fy-NL,ga-IE.xpi",
+                    "sha256": "ff75302b2d938162f986b31e6fac419ebfafda7835eaf7ca4ca1e4e7290ef5c8",
+                    "size": 309
                 },
                 {
                     "type": "extra-data",
@@ -372,8 +362,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "daf9941666c11babff96c8b90145366d5b8ae4291688dc86ef423b7803fa4c05",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/gd.xpi",
+                    "sha256": "d3fc9cdc6260d4d293160fb3cbd5f984ffe84cbf3d29b1b94e4f7ae5ab375c75",
                     "size": 574065
                 },
                 {
@@ -382,8 +372,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "1e5a512e7d1cf914a3d0fc105269be70ea2ed230a9fc7688c5d13ddeb366c9d5",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/gl.xpi",
+                    "sha256": "fc0405811ff57de111ef67f55dd0c4d28e3c5ec82b0f3f37a51e9288f6287e41",
                     "size": 575150
                 },
                 {
@@ -392,8 +382,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "0ba6bc817dcada05ba84834693f8dc2a34a6b11325312d1cf5fb406469a9a26a",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/he.xpi",
+                    "sha256": "e8f8d4aa44c9103e078e7642d8d62acde8a16c0dc8813812cc18953496d9119b",
                     "size": 592566
                 },
                 {
@@ -402,9 +392,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "60ada7f1d81536ff207436e5d97742b74a314b6687deda0f102d7a4afbf8e220",
-                    "size": 564780
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/hr.xpi",
+                    "sha256": "351f9c8be31e8316220efe707a08e6604fa24303b00d520c0988e426e942d542",
+                    "size": 564778
                 },
                 {
                     "type": "extra-data",
@@ -412,9 +402,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "a6831c6fd8667d45b82301bdbbe0acbb2b814f7785eae61c3df03b5e9f4ff44a",
-                    "size": 582242
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/hsb.xpi",
+                    "sha256": "25868d4c144fc1cbe6570a81557a116ade400e8e5a9d991c4f6430b5097ad968",
+                    "size": 582241
                 },
                 {
                     "type": "extra-data",
@@ -422,8 +412,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "2aa78f474f69a8bc2d0d8893ff18a57b2126c8888706d21c20625207bf83f0cc",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/hu.xpi",
+                    "sha256": "3673d396f6f2c8532b44c2876b256b6370c299859a874e66a1a497cc7c82bf12",
                     "size": 586446
                 },
                 {
@@ -432,8 +422,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "557558deeb63012f91959e975832458c753c9469a205827962f68c5f42bbfb3b",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/hy-AM.xpi",
+                    "sha256": "79b83cc198b302e9ad899285d2e22556755f4312fbd03b48a21aefe426adc3db",
                     "size": 629879
                 },
                 {
@@ -442,9 +432,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "adabb413805c050e2d809116b0a7aa929dcb9ff5a8cda78e7acf6ac120953468",
-                    "size": 546527
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/id.xpi",
+                    "sha256": "146b1cad707c7e675ac794e5e3b850c225d256c8b7eb209784f37acc8dabc1d1",
+                    "size": 546526
                 },
                 {
                     "type": "extra-data",
@@ -452,8 +442,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "bc8675a3667aabc3c438ca19c8ef5560e867579347a1bb64e3231f9a4c064c38",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/is.xpi",
+                    "sha256": "ee72e9914c047f6dde2a26cadc942362eba9cd9102075632d6c7f1efb55b4e47",
                     "size": 555712
                 },
                 {
@@ -462,9 +452,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "88840b998eb7320df68d23a7ad3d0451b806986cd8324cdaa2332ec186613128",
-                    "size": 455408
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/it.xpi",
+                    "sha256": "b09bf17cf725f0179a441103fff9d6ada44bb27129d403210ebb09e774c6a3c5",
+                    "size": 455407
                 },
                 {
                     "type": "extra-data",
@@ -472,9 +462,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "fed11dfbf56caa82c8d3b9de5a1d77a3b25ad9f3c98640735921cf3386c510f3",
-                    "size": 630053
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ja.xpi",
+                    "sha256": "89c67cd4782ecfee3355cc296d0bb21d15e8ffbfa635a8ec787829c332d9f7f9",
+                    "size": 630052
                 },
                 {
                     "type": "extra-data",
@@ -482,9 +472,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "b4fbbbca63d71293e5d272de1cb63f49b2bb6e0fdc1169eb2b6c43acb4fe81d7",
-                    "size": 568689
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/kab.xpi",
+                    "sha256": "9a65c237a28db2b0005cf1ac3a7f8560ce397686b9649b76eee846382b27c9ad",
+                    "size": 568691
                 },
                 {
                     "type": "extra-data",
@@ -492,8 +482,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "879f073ada33126d5deeaf07492835c4246480631cf7ab658f9b1ab952dbd63f",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ko.xpi",
+                    "sha256": "116379d62a97355ce898f8c05a01c8d38499408347f41c0ce68c668abd07d1a6",
                     "size": 595517
                 },
                 {
@@ -502,8 +492,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "8e6b88d22fdf2c1d724d35c452338b21c81e65fc207accb93644dc83daa5107a",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/lt.xpi",
+                    "sha256": "8c4a14c6f670744233eb6baaf93e9296f931a0f37b52b5d26978866311c19fb7",
                     "size": 580598
                 },
                 {
@@ -512,9 +502,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "dec871d230e2afd1977b8c67c8aa65ae4ea017a634c6fe891ce7f0561621cc65",
-                    "size": 551104
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/nb-NO.xpi",
+                    "sha256": "ac281bcccb47b0547649bf2bb0d469cea9972eabbf46fdea3a389b211cd664a7",
+                    "size": 551103
                 },
                 {
                     "type": "extra-data",
@@ -522,8 +512,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "d4e02f9fc22dc237ed0b3623a9e298f177434afb0967b32721acccc3201618a5",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/nn-NO.xpi",
+                    "sha256": "63f11a440531a673a23918c307e7a69a94e9e65ba29d363320736bf25866658b",
                     "size": 551891
                 },
                 {
@@ -532,9 +522,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "661b78d3a15559e359cb948a9f5df55cc5cd9958b794f877d2836106f686f487",
-                    "size": 646569
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/pa-IN.xpi",
+                    "sha256": "fda332c982bb6d78d3c081648e52fe6ec40a5791bbf8bbf561d74ea2488c339b",
+                    "size": 646568
                 },
                 {
                     "type": "extra-data",
@@ -542,8 +532,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "606606ea12c72fbf3bf00369d69a182ec2db369eadd245d5fc1f9365a2b18b6d",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/pl.xpi",
+                    "sha256": "2fcd160bacebd77843e6a85eb20e83513870062c7526aa172f270d842668afb0",
                     "size": 469901
                 },
                 {
@@ -552,9 +542,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "aa4a97312893ca1a3952af89711b7793e841f9e91f44f9f53612a164593dd110",
-                    "size": 558224
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/pt-BR.xpi",
+                    "sha256": "8f3e9f83dec81527a4048d3d57bc28ce8e11b097474daaccb2f60d32503f08f4",
+                    "size": 558223
                 },
                 {
                     "type": "extra-data",
@@ -562,9 +552,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "4838816aa27dc5799e4dbfd8c491b83889c68fdbd8f1ff3220522da014e539e4",
-                    "size": 565624
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/pt-PT.xpi",
+                    "sha256": "096826fdbeaaebed3886db5fa5025179b7f8abcd80599d68e02f6872ac66c465",
+                    "size": 565623
                 },
                 {
                     "type": "extra-data",
@@ -572,8 +562,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "a102c56a122fd22a1ea0a69a75ff8709d55a383595cc90b066d144d993e990f8",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/rm.xpi",
+                    "sha256": "e2923b46e2f1e1e3af4bc8f41effde5395132404a23160e4a0413fc312e20859",
                     "size": 557605
                 },
                 {
@@ -582,8 +572,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "99b2f4b52c4f1dea880bfd826a119fa604885a9195039376ba092a830ef929c4",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ro.xpi",
+                    "sha256": "85da875bd3b785f5043b8734042302061436103df943a91671a49abfcb823ab4",
                     "size": 570529
                 },
                 {
@@ -592,8 +582,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "40119528c2301ecf0e778590026aed070e1e36929a245b8c02a69c1222d6103e",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ru.xpi",
+                    "sha256": "20102503cd4a8cda03be12396d1bdfb90623bd54f35c4013fa56723352f74e22",
                     "size": 530670
                 },
                 {
@@ -602,8 +592,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "a3b8bff61f1bfda9ca7a9cbc3a04563b33c693f4853e4fe15cff2d098314e578",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/si.xpi",
+                    "sha256": "d66402d1f8b9d16513be5c620348a3703521020e732857647c4b35aeff820d07",
                     "size": 649010
                 },
                 {
@@ -612,8 +602,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "35cff3578b05c5448307ae69f1e2784598d1696ccba3ec9abccdb19c0f05f1a1",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/sk.xpi",
+                    "sha256": "5ac8d7c810be9797ade84805bf85b7aea215419671d9b77be54413e08f26c018",
                     "size": 583882
                 },
                 {
@@ -622,8 +612,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "601baa286166d9ddebd6e0d0ed609403faa2474253b74aad0add0a9413c71c89",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/sl.xpi",
+                    "sha256": "2c705087f4ac765292a6bac0099be39091a6293e52538112587065e1b1ad794e",
                     "size": 562834
                 },
                 {
@@ -632,9 +622,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "a78686c96f8f04ce1bae89c60585aefbb89db6dd89ffb58d03e02de4bd8ad90b",
-                    "size": 570616
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/sq.xpi",
+                    "sha256": "862ed58bb0c13633ef0de4577fc738e84d6cc50ed94aa3d617672a88acb4550e",
+                    "size": 570617
                 },
                 {
                     "type": "extra-data",
@@ -642,9 +632,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "01c6f243d9654f3f94964121ce0472fbe81a6d3e668c88df412bad5af89c8ade",
-                    "size": 609020
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/sr.xpi",
+                    "sha256": "4b4d89bfe976681755b45371d0a4bd6f25a4877f2b694434a142d9251a369992",
+                    "size": 609019
                 },
                 {
                     "type": "extra-data",
@@ -652,8 +642,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "4004249e78db033b808ab0c8153e00cef03261ebb73a95e8551bb1c6b3959e48",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/sv-SE.xpi",
+                    "sha256": "ede899e7554be6b60fb093c31803f5964e33f33bafde79ab95fa31231097c884",
                     "size": 565777
                 },
                 {
@@ -662,8 +652,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "e0dd273b8e68b89588dd3272f7075af7ff1d18c6426af898f516eb2e02b04887",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/ta-LK.xpi",
+                    "sha256": "dcade6aca9be34468a93277903971e248198776f03ebc2ebbe21a3002ca829d0",
                     "size": 675039
                 },
                 {
@@ -672,8 +662,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "6d59ed19e25dc1eb4b2dcbbad7e7adb00cf54266a77fcf237e98ec0ff78e415a",
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/tr.xpi",
+                    "sha256": "91d130b3f07b38720f887a323fe49393452fc88b6830540f0cc76682209dbf38",
                     "size": 569926
                 },
                 {
@@ -682,9 +672,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "1529750bb6eed89bea777120d049f8fe598ecad3450fac1910504479eec9cd89",
-                    "size": 652855
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/uk.xpi",
+                    "sha256": "da6176a05dc819a5fa7376b5f62a84846e01365b78495a576a2d738edc8b8577",
+                    "size": 652854
                 },
                 {
                     "type": "extra-data",
@@ -692,9 +682,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "020917361ec5336af4d52f8e4096dc8fde910aa6a7a6c7bdc8d1c575f5631a54",
-                    "size": 637164
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/vi.xpi",
+                    "sha256": "e25dfd63f38748c46b7c8d9bf87497e06cfee8de4ace89b9fe13e73a68e818ec",
+                    "size": 637163
                 },
                 {
                     "type": "extra-data",
@@ -702,9 +692,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "57a37a05cffc455d59a62bfcd7e3f8dda8a5373ed213c3313b564a65e0a17475",
-                    "size": 593612
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/zh-CN.xpi",
+                    "sha256": "ad691e808b25f34c105b80f61b6a2cd8dbbb2230eca741c126954ae4330eac0b",
+                    "size": 593611
                 },
                 {
                     "type": "extra-data",
@@ -712,9 +702,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.8.0/linux-x86_64/xpi/et.xpi",
-                    "sha256": "72f8710cfc670aa6b7983a02e6d17cf36a813a5f7d0cbfee039fc6892708f1b0",
-                    "size": 595729
+                    "url": "https://download-origin.cdn.mozilla.net/pub/thunderbird/releases/52.9.1/linux-x86_64/xpi/zh-TW.xpi",
+                    "sha256": "19e45d672c06afe44b1103b94199094374098671b29d84043fe0f4d096b7090f",
+                    "size": 595728
                 }
             ]
         }
