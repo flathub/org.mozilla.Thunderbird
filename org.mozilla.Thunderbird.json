@@ -78,7 +78,7 @@
                 "cflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
                 "cxxflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
                 "env":{
-                    "VERSION": "60.0"
+                    "VERSION": "52.9.1"
                 }
             },
             "build-commands": [
@@ -106,8 +106,8 @@
 		},
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.0/source/thunderbird-60.0.source.tar.xz",
-                    "sha256": "bd7da88dcc03c448a4e975b5a1d3e9bf466ec9151b1059392bcdb50955a22056"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/52.9.1/source/thunderbird-52.9.1.source.tar.xz",
+                    "sha256": "286fa71504e7184f3a41bcbdebf591bebe8e04dccbad1c93a47c6e72a7125c4d"
                 }
             ]
         }
