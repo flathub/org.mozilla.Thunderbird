@@ -68,62 +68,7 @@
     https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
   --> 
   <screenshots>
-    <screenshot type="default">
-      <caption>Main</caption>
-      <image type="remote" width="2096" height="520">https://raw.githubusercontent.com/thundernest/thunderbird-website/master/media/img/l10n/en-US/thunderbird/landing/screenshot-linux-high-res.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Mail Account Setup Wizard</caption>
-      <image type="remote" width="400" height="135">https://www.thunderbird.net/media/img/thunderbird/features/mail-account-setup.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>One-click Address Book</caption>
-      <image type="remote" width="394" height="198">https://www.thunderbird.net/media/img/thunderbird/features/address-book.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Attachment Reminder</caption>
-      <image type="remote" width="400" height="156">https://www.thunderbird.net/media/img/thunderbird/features/attachment-reminder.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Multiple-channel chat</caption>
-      <image type="remote" width="400" height="200">https://www.thunderbird.net/media/img/thunderbird/features/chatnetworks.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Tabbed Email</caption>
-      <image type="remote" width="420" height="200">https://www.thunderbird.net/media/img/thunderbird/features/newaustralis.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Search the Web</caption>
-      <image type="remote" width="446" height="193">https://www.thunderbird.net/media/img/thunderbird/features/search-the-web.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Quick Filter Toolbar</caption>
-      <image type="remote" width="400" height="132">https://www.thunderbird.net/media/img/thunderbird/features/quick-filter-toolbar.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Search Tools</caption>
-      <image type="remote" width="340" height="201">https://www.thunderbird.net/media/img/thunderbird/features/search.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Message Archive</caption>
-      <image type="remote" width="350" height="207">https://www.thunderbird.net/media/img/thunderbird/features/message-archive.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Activity Manager</caption>
-      <image type="remote" width="392" height="257">https://www.thunderbird.net/media/img/thunderbird/features/activity-manager.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Large Files Management</caption>
-      <image type="remote" width="420" height="198">https://www.thunderbird.net/media/img/thunderbird/features/filelink.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Robust Privacy and Do Not Track</caption>
-      <image type="remote" width="420" height="200">https://www.thunderbird.net/media/img/thunderbird/features/donottrack.png</image>
-    </screenshot>
-    <screenshot>
-      <caption>Phishing Protection</caption>
-      <image type="remote" width="400" height="141">https://www.thunderbird.net/media/img/thunderbird/features/phishing-protection.png</image>
-    </screenshot>
+    <screenshot type="default">https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/mozilla-thunderbird/a.png</screenshot>
   </screenshots>
  
   <update_contact>adrianlucrececeleste@airmail.cc</update_contact>
