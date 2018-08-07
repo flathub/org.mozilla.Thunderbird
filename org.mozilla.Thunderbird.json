@@ -3,6 +3,7 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.28",
     "sdk": "org.gnome.Sdk",
+    "sd-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
