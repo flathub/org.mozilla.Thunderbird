@@ -82,7 +82,6 @@
                 }
             },
             "build-commands": [
-                "./mach bootstrap",
                 "./mach configure",
                 "./mach build",
                 "./mach buildsymbols",
