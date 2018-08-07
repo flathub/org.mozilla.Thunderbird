@@ -82,8 +82,9 @@
                 }
             },
             "build-commands": [
-                "make -f client.mk",
-                "make -f client.mk install INSTALL_SDK=",
+                "./mach configure",
+                "./mach build",
+                "./mach buildsymbols",
                 "for i in 16 22 24 32 48 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp /app/lib/thunderbird-${VERSION}/chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/applications",
                 "cp org.mozilla.Thunderbird.desktop /app/share/applications",
