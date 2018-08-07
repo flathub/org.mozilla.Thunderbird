@@ -35,7 +35,7 @@
         "cxxflags": "-O2 -g",
         "env": {
             "V": "1",
-            "CARGO_HOME": "/run/build/Fractal/cargo"
+            "CARGO_HOME": "/run/build/Thunderbird/cargo"
         }
     },
     "cleanup": [
