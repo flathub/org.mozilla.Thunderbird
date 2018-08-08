@@ -81,12 +81,13 @@
                 "cflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
                 "cxxflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
                 "env":{
-                    "VERSION": "60.0"
+                    "VERSION": "60.0",
+                    "TERM": "linux"
                 }
             },
             "build-commands": [
                 "./mach configure",
-                "./mach build",
+                "./mach build -j $FLATPAK_BUILDER_N_JOBS",
                 "./mach buildsymbols",
                 "for i in 16 22 24 32 48 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp /app/lib/thunderbird-${VERSION}/chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/applications",
