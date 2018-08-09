@@ -7,26 +7,16 @@
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
-        /* X11 + XShm access */
         "--share=ipc", "--socket=x11",
-        /* OpenGL access */
         "--device=dri",
-        /* Needs to talk to the network: */
         "--share=network",
-        /* Play sounds */
         "--socket=pulseaudio",
-        /* Access to thunderbird configuration and cache files */
         "--filesystem=~/.cache/thunderbird:create", "--filesystem=~/.thunderbird:create",
-        /* Access to home directory (read-only, to upload attachments) */
         "--filesystem=home:ro",
-        /* Access to Downloads (to download attachments) */
         "--filesystem=xdg-download:rw",
-        /* Needed for dconf to work */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        /* Needed for accessibility */
         "--talk-name=org.a11y.*",
-        /* Make notifications work */
         "--talk-name=org.freedesktop.Notifications"      
     ],
     "build-options" : {
