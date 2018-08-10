@@ -80,7 +80,7 @@
                 "./mach build -j $FLATPAK_BUILDER_N_JOBS",
                 "./mach buildsymbols",
                 "./mach install",
-                "for i in 16 22 24 32 48 64;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp /app/lib/thunderbird/chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
+                "for i in 16 22 24 32 48 64 512;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp /app/lib/thunderbird/chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/applications",
                 "cp org.mozilla.Thunderbird.desktop /app/share/applications",
 		"mkdir -p /app/share/appdata",
