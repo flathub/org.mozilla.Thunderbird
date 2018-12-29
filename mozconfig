@@ -1,30 +1,53 @@
-# General configuration options
 ac_add_options --prefix=/app
 
-ac_add_options --with-pthreads
-ac_add_options --disable-crashreporter
-ac_add_options --disable-debug
-ac_add_options --disable-gconf
-ac_add_options --disable-necko-wifi
-ac_add_options --disable-tests
-ac_add_options --disable-updater
+# build thunderbird
+mk_add_options MOZ_CO_PROJECT=mail
+ac_add_options --enable-application=comm/mail
 
-ac_add_options --enable-application=mail
+# build lightning extension
 ac_add_options --enable-calendar
-ac_add_options --enable-gio
-ac_add_options --enable-install-strip
-ac_add_options --enable-official-branding
-ac_add_options --enable-optimize
-ac_add_options --enable-safe-browsing
-ac_add_options --enable-strip
-ac_add_options --enable-url-classifier
-ac_add_options --enable-pie
 
-# Dependencies we took directly from the runtime
-ac_add_options --enable-system-ffi
-ac_add_options --enable-system-pixman
+# use system libs if possible
+ac_add_options --with-system-jpeg
+ac_add_options --with-system-zlib
+ac_add_options --with-system-libvpx
 ac_add_options --with-system-bz2
 ac_add_options --with-system-icu
-ac_add_options --with-system-jpeg
-ac_add_options --with-system-libvpx
-ac_add_options --with-system-zlib
+
+# https://gitlab.com/freedesktop-sdk/freedesktop-sdk/issues/560
+#ac_add_options --with-system-nss
+#ac_add_options --with-system-nspr
+
+# https://gitlab.com/freedesktop-sdk/freedesktop-sdk/issues/561
+#ac_add_options --enable-system-sqlite
+
+# error: --with-system-png won't work because the system's libpng doesn't have APNG support
+#ac_add_options --with-system-png
+
+ac_add_options --enable-system-ffi
+ac_add_options --enable-system-pixman
+
+# use optimizations and hardening
+ac_add_options --with-pthreads
+ac_add_options --enable-optimize
+ac_add_options --enable-hardening
+ac_add_options --enable-pie
+
+# disable less useful features and minimize dependencies
+ac_add_options --disable-debug
+ac_add_options --disable-crashreporter
+ac_add_options --disable-tests
+ac_add_options --disable-strip
+ac_add_options --disable-necko-wifi
+ac_add_options --disable-updater
+ac_add_options --disable-gconf
+ac_add_options --disable-startup-notification
+
+mk_add_options MOZ_MAKE_FLAGS="-j $FLATPAK_BUILDER_N_JOBS"
+
+ac_add_options --enable-official-branding
+
+export BUILD_OFFICIAL=1
+export MOZILLA_OFFICIAL=1
+mk_add_options BUILD_OFFICIAL=1
+mk_add_options MOZILLA_OFFICIAL=1

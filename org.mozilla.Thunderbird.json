@@ -1,38 +1,33 @@
 {
     "app-id": "org.mozilla.Thunderbird",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
-    "sdk": "org.gnome.Sdk",
+    "//": "This is a convenient way to package GTK2 and friends into the app",
+    "base": "io.atom.electron.BaseApp",
+    "base-version": "18.08",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "18.08",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
-        /* X11 + XShm access */
-        "--share=ipc", "--socket=x11",
-        /* OpenGL access */
+        "--share=ipc",
+        "--socket=x11",
         "--device=dri",
-        /* Needs to talk to the network: */
         "--share=network",
-        /* Play sounds */
         "--socket=pulseaudio",
-        /* Access to thunderbird configuration and cache files */
-        "--filesystem=~/.cache/thunderbird:create", "--filesystem=~/.thunderbird:create",
-        /* Access to home directory (read-only, to upload attachments) */
+        "--filesystem=~/.cache/thunderbird:create",
+        "--filesystem=~/.thunderbird:create",
         "--filesystem=home:ro",
-        /* Access to Downloads (to download attachments) */
         "--filesystem=xdg-download:rw",
-        /* Needed for dconf to work */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        /* Needed for accessibility */
         "--talk-name=org.a11y.*",
-        /* Make notifications work */
-        "--talk-name=org.freedesktop.Notifications"      
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "build-options" : {
-        "cflags": "-O2 -g",
-        "cxxflags": "-O2 -g",
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
         "env": {
-            "V": "1"
+            "CARGO_HOME": "/run/build/Thunderbird/cargo"
         }
     },
     "cleanup": [
@@ -59,32 +54,31 @@
 	        "ln -s /app/bin/autoconf /app/bin/autoconf-2.13"
             ]
         },
-	{
-	    "name": "icu",
-        "cleanup": ["/bin/*", "/sbin/*"],
-	    "sources": [
-	       {
-		    "type": "archive",
-	            "url":"http://download.icu-project.org/files/icu4c/60.1/icu4c-60_1-src.tgz",
-	            "sha256":"f8f5a6c8fbf32c015a467972bdb1477dc5f5d5dfea908b6ed218715eeb5ee225"
-	       }
-	    ],
-	   "subdir": "source"
-	},
+        {
+            "name": "yasm",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz",
+                    "sha256": "3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f"
+                }
+            ]
+        },
         {
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "cflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
-                "cxxflags": "-fno-delete-null-pointer-checks -fno-lifetime-dse -fno-schedule-insns2",
                 "env":{
-                    "VERSION": "52.9.1"
+                    "VERSION": "60.4.0",
+                    "TERM": "linux"
                 }
             },
             "build-commands": [
-                "make -f client.mk",
-                "make -f client.mk install INSTALL_SDK=",
-                "for i in 16 22 24 32 48 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp /app/lib/thunderbird-${VERSION}/chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
+                "./mach build",
+                "./mach install",
+                "for i in 16 22 24 32 48 64 128 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
+                "mkdir -p /app/share/icons/hicolor/symbolic/apps",
+                "cp comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
                 "mkdir -p /app/share/applications",
                 "cp org.mozilla.Thunderbird.desktop /app/share/applications",
 		"mkdir -p /app/share/appdata",
@@ -105,8 +99,8 @@
 		},
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/52.9.1/source/thunderbird-52.9.1.source.tar.xz",
-                    "sha256": "286fa71504e7184f3a41bcbdebf591bebe8e04dccbad1c93a47c6e72a7125c4d"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.4.0/source/thunderbird-60.4.0.source.tar.xz",
+                    "sha256": "27a6cdd9cfdd7ce70b1d193c64739db6be6b39eec308f0122d8472a6cd243e75"
                 }
             ]
         }
