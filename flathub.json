@@ -1,4 +1,4 @@
 {
 	"end-of-life": "Currently no maintainer for the flathub package.",
-	"skip-arches": ["arm", "i386"]
+	"only-arches": ["x86_64"]
 }
