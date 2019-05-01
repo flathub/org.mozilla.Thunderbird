@@ -29,12 +29,6 @@
         /* Make notifications work */
         "--talk-name=org.freedesktop.Notifications"
     ],
-    "build-options" : {
-        "append-path": "/usr/lib/sdk/rust-stable/bin",
-        "env": {
-            "CARGO_HOME": "/run/build/Thunderbird/cargo"
-        }
-    },
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
@@ -48,6 +42,7 @@
         "shared-modules/gtk2/gtk2.json",
         {
             "name": "autoconf-2.13",
+            "config-opts": ["--program-suffix=2.13"],
             "cleanup": [ "*" ],
             "sources": [
                 {
@@ -55,13 +50,11 @@
                     "url": "http://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz",
                     "sha256": "f0611136bee505811e9ca11ca7ac188ef5323a8e2ef19cffd3edb3cf08fd791e"
                 }
-            ],
-            "post-install": [
-	        "ln -s /app/bin/autoconf /app/bin/autoconf-2.13"
             ]
         },
         {
             "name": "yasm",
+            "cleanup": [ "*" ],
             "sources": [
                 {
                     "type": "archive",
@@ -74,9 +67,11 @@
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
                 "env":{
                     "VERSION": "60.6.1",
-                    "TERM": "linux"
+                    "TERM": "linux",
+                    "CARGO_HOME": "/run/build/Thunderbird/cargo"
                 }
             },
             "build-commands": [
