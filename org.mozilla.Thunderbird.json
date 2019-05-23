@@ -100,8 +100,8 @@
 		},
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.6.1/source/thunderbird-60.6.1.source.tar.xz",
-                    "sha256": "17aef9232a76bdc812422883c02b01b4ecb7633c3ee9870da5e4ec0e20ba5f67"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.7.0/source/thunderbird-60.7.0.source.tar.xz",
+                    "sha256": "377ca762624df103dd768dc36b7632537b46aa83ddc9d336a157cadcde8bb51d"
                 },
                 {
                     "type" : "patch",
