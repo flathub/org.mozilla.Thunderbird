@@ -18,6 +18,7 @@ ac_add_options --with-system-nss
 ac_add_options --with-system-nspr
 ac_add_options --with-system-png
 
+# https://github.com/flathub/org.mozilla.Thunderbird/pull/61#issue-275142159
 #ac_add_options --enable-system-sqlite
 ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
@@ -26,6 +27,10 @@ ac_add_options --enable-system-pixman
 ac_add_options --with-pthreads
 ac_add_options --enable-optimize
 ac_add_options --enable-pie
+
+# Retain debug symbols
+ac_add_options --disable-strip
+ac_add_options --disable-install-strip
 
 # disable less useful features and minimize dependencies
 ac_add_options --disable-debug
@@ -36,6 +41,7 @@ ac_add_options --disable-necko-wifi
 ac_add_options --disable-updater
 ac_add_options --disable-gconf
 ac_add_options --disable-startup-notification
+ac_add_options --disable-tests
 
 # Fix potential crashes (remove for TB 68)
 # https://bugs.archlinux.org/task/60779
