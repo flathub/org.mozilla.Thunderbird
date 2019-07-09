@@ -41,7 +41,6 @@ ac_add_options --disable-necko-wifi
 ac_add_options --disable-updater
 ac_add_options --disable-gconf
 ac_add_options --disable-startup-notification
-ac_add_options --disable-tests
 
 # Fix potential crashes (remove for TB 68)
 # https://bugs.archlinux.org/task/60779
