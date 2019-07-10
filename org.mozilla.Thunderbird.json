@@ -69,7 +69,7 @@
             "build-options":{
                 "append-path": "/usr/lib/sdk/rust-stable/bin",
                 "env":{
-                    "VERSION": "60.7.2",
+                    "VERSION": "60.8.0",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo"
                 }
@@ -100,8 +100,8 @@
 		},
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.7.2/source/thunderbird-60.7.2.source.tar.xz",
-                    "sha256": "fc89a5f66b17d554fc0b9c153483edcc74b1bacc916dfd6dccead8478060af31"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.8.0/source/thunderbird-60.8.0.source.tar.xz",
+                    "sha256": "1e7a13e64b63476d2235aaac6823fdab949af45cfcd5a25ee710cbae08c2f5d1"
                 },
                 {
                     "type" : "patch",
