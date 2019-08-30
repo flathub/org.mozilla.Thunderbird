@@ -38,3 +38,6 @@ To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://a
 #### Wayland
 To enable the experimental [Wayland](https://wayland.freedesktop.org/) backend (assuming the desktop runs under a Wayland session) set  (may require `sudo`)<br>
 `flatpak override --env=MOZ_ENABLE_WAYLAND=1 org.mozilla.Thunderbird`
+
+#### Smartcard
+* For Smartcard support you need at least Flatpak 1.3.2.
