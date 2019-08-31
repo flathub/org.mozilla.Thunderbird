@@ -13,9 +13,12 @@ ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
 ac_add_options --with-system-libvpx
 ac_add_options --with-system-bz2
-ac_add_options --with-system-icu
-ac_add_options --with-system-nss
-ac_add_options --with-system-nspr
+# needs icu 63.1
+#ac_add_options --with-system-icu
+# needs nss 3.44.1
+#ac_add_options --with-system-nss
+# needs nspr 4.22
+#ac_add_options --with-system-nspr
 ac_add_options --with-system-png
 
 # https://github.com/flathub/org.mozilla.Thunderbird/pull/61#issue-275142159
@@ -23,10 +26,8 @@ ac_add_options --with-system-png
 ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
 
-# use optimizations and hardening
-ac_add_options --with-pthreads
+# use optimizations
 ac_add_options --enable-optimize
-ac_add_options --enable-pie
 
 # Retain debug symbols
 ac_add_options --disable-strip

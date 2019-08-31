@@ -1,9 +1,12 @@
 {
     "app-id": "org.mozilla.Thunderbird",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
-    "sdk": "org.gnome.Sdk",
-    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08beta",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.node10"
+    ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
@@ -66,24 +69,31 @@
         {
             "name": "thunderbird",
             "buildsystem": "simple",
+            "cleanup": [
+                "/app/bin/cbindgen",
+                "/app/bin/node"
+            ],
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
                 "env":{
-                    "VERSION": "60.8.0",
+                    "VERSION": "68.0",
                     "TERM": "linux",
-                    "CARGO_HOME": "/run/build/Thunderbird/cargo"
+                    "CARGO_HOME": "/run/build/Thunderbird/cargo",
+                    "npm_config_nodedir": "/usr/lib/sdk/node10"
                 }
             },
             "build-commands": [
-                "./mach build",
+                "install -Dm755 cbindgen /app/bin/",
+                "install -Dm755 node-stdout-nonblocking-wrapper /app/bin/node",
+                "./mach build -j4",
                 "./mach install",
                 "for i in 16 22 24 32 48 64 128 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/icons/hicolor/symbolic/apps",
                 "cp comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
                 "mkdir -p /app/share/applications",
                 "cp org.mozilla.Thunderbird.desktop /app/share/applications",
-		"mkdir -p /app/share/appdata",
-		"cp org.mozilla.Thunderbird.appdata.xml /app/share/appdata"
+                "mkdir -p /app/share/metainfo",
+                "cp org.mozilla.Thunderbird.appdata.xml /app/share/metainfo"
             ],
             "sources": [
                 {
@@ -94,18 +104,27 @@
                     "type": "file",
                     "path": "org.mozilla.Thunderbird.desktop"
                 },
-		{
-			"type": "file",
-			"path": "org.mozilla.Thunderbird.appdata.xml"
-		},
+                {
+                    "type": "file",
+                    "path": "org.mozilla.Thunderbird.appdata.xml"
+                },
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.8.0/source/thunderbird-60.8.0.source.tar.xz",
-                    "sha256": "1e7a13e64b63476d2235aaac6823fdab949af45cfcd5a25ee710cbae08c2f5d1"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/68.0/source/thunderbird-68.0.source.tar.xz",
+                    "sha256": "f87dade2dd64ef61de842812d3e42d82b8a541988da851077778abfa2ebd95d1"
                 },
                 {
                     "type" : "patch",
                     "path" : "rust-1.33-build.patch"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/eqrion/cbindgen/releases/download/v0.9.1/cbindgen",
+                    "sha256": "ceecdfa7ed787b68e3797912c02895caee4175368749be9519375015ac9236cb"
+                },
+                {
+                    "type": "file",
+                    "path": "node-stdout-nonblocking-wrapper"
                 }
             ]
         }
