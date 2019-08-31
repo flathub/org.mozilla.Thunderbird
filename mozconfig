@@ -4,29 +4,31 @@ ac_add_options --prefix=/app
 # build thunderbird
 mk_add_options MOZ_CO_PROJECT=mail
 ac_add_options --enable-application=comm/mail
+ac_add_options --enable-official-branding
 
 # build lightning extension
 ac_add_options --enable-calendar
 
+# Use gtk3
+ac_add_options --enable-default-toolkit=cairo-gtk3
+
 # use system libs if possible
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
-ac_add_options --with-system-libvpx
+#error: no member named 'frame_flags' in 'vpx_svc_ref_frame_config'
+#ac_add_options --with-system-libvpx
 ac_add_options --with-system-bz2
 ac_add_options --with-system-icu
 ac_add_options --with-system-nss
 ac_add_options --with-system-nspr
 ac_add_options --with-system-png
-
 # https://github.com/flathub/org.mozilla.Thunderbird/pull/61#issue-275142159
 #ac_add_options --enable-system-sqlite
 ac_add_options --enable-system-ffi
 ac_add_options --enable-system-pixman
 
-# use optimizations and hardening
-ac_add_options --with-pthreads
+# use optimizations
 ac_add_options --enable-optimize
-ac_add_options --enable-pie
 
 # Retain debug symbols
 ac_add_options --disable-strip
@@ -47,11 +49,8 @@ ac_add_options --disable-startup-notification
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1423822
 ac_add_options --disable-elf-hack
 
-mk_add_options MOZ_MAKE_FLAGS="-j$FLATPAK_BUILDER_N_JOBS"
-
-ac_add_options --enable-official-branding
-
-export BUILD_OFFICIAL=1
+# Needed to enable breakpad in application.ini
 export MOZILLA_OFFICIAL=1
-mk_add_options BUILD_OFFICIAL=1
-mk_add_options MOZILLA_OFFICIAL=1
+
+# Fix python virtualenv
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/build-dir
