@@ -1,9 +1,12 @@
 {
     "app-id": "org.mozilla.Thunderbird",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
-    "sdk": "org.gnome.Sdk",
-    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.node10"
+    ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
@@ -21,13 +24,12 @@
         "--filesystem=xdg-public-share:ro",
         /* Access to Downloads (to download attachments) */
         "--filesystem=xdg-download:rw",
-        /* Needed for dconf to work */
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         /* Needed for accessibility */
         "--talk-name=org.a11y.*",
         /* Make notifications work */
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        /* Use portal to access local files */
+        "--env=GTK_USE_PORTAL=1"
     ],
     "cleanup": [
         "/include",
@@ -40,6 +42,7 @@
     ],
     "modules": [
         "shared-modules/gtk2/gtk2.json",
+        "shared-modules/dbus-glib/dbus-glib-0.110.json",
         {
             "name": "autoconf-2.13",
             "config-opts": ["--program-suffix=2.13"],
@@ -64,26 +67,54 @@
             ]
         },
         {
-            "name": "thunderbird",
+            "name": "cbindgen",
             "buildsystem": "simple",
+            "build-commands": [
+                "cargo build --release --locked",
+                "install -Dm 755 target/release/cbindgen -t /app/bin"
+            ],
             "build-options":{
                 "append-path": "/usr/lib/sdk/rust-stable/bin",
                 "env":{
-                    "VERSION": "60.8.0",
+                    "CARGO_HOME": "/run/build/cbindgen/cargo"
+                }
+            },
+            "cleanup": [ "*" ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/eqrion/cbindgen.git",
+                    "tag": "v0.9.1",
+                    "commit": "8e4db4c17fbdc0cfa9b98cfe9d47ca6263858def"
+                },
+                "cbindgen-dependencies.json"
+            ]
+        },
+        {
+            "name": "thunderbird",
+            "buildsystem": "simple",
+            "build-options":{
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
+                "append-ld-library-path": "/usr/lib/sdk/node10/lib",
+                "env":{
+                    "VERSION": "68.1.0",
                     "TERM": "linux",
-                    "CARGO_HOME": "/run/build/Thunderbird/cargo"
+                    "CARGO_HOME": "/run/build/Thunderbird/cargo",
+                    "npm_config_nodedir": "/usr/lib/sdk/node10"
                 }
             },
             "build-commands": [
+                "install -Dm755 node-stdout-nonblocking-wrapper /app/bin/node",
                 "./mach build",
                 "./mach install",
+                "rm -f /app/bin/node",
                 "for i in 16 22 24 32 48 64 128 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/icons/hicolor/symbolic/apps",
                 "cp comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
                 "mkdir -p /app/share/applications",
                 "cp org.mozilla.Thunderbird.desktop /app/share/applications",
-		"mkdir -p /app/share/appdata",
-		"cp org.mozilla.Thunderbird.appdata.xml /app/share/appdata"
+                "mkdir -p /app/share/metainfo",
+                "cp org.mozilla.Thunderbird.appdata.xml /app/share/metainfo"
             ],
             "sources": [
                 {
@@ -94,18 +125,18 @@
                     "type": "file",
                     "path": "org.mozilla.Thunderbird.desktop"
                 },
-		{
-			"type": "file",
-			"path": "org.mozilla.Thunderbird.appdata.xml"
-		},
                 {
-                    "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/60.8.0/source/thunderbird-60.8.0.source.tar.xz",
-                    "sha256": "1e7a13e64b63476d2235aaac6823fdab949af45cfcd5a25ee710cbae08c2f5d1"
+                    "type": "file",
+                    "path": "org.mozilla.Thunderbird.appdata.xml"
                 },
                 {
-                    "type" : "patch",
-                    "path" : "rust-1.33-build.patch"
+                    "type": "archive",
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/68.1.0/source/thunderbird-68.1.0.source.tar.xz",
+                    "sha256": "de0e5c7d1d5576f451e386e4779f155b7af97621a4e22caac0c6dee3c9d76eef"
+                },
+                {
+                    "type": "file",
+                    "path": "node-stdout-nonblocking-wrapper"
                 }
             ]
         }
