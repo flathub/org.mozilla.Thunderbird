@@ -1,11 +1,18 @@
-# org.mozilla.Thunderbird
+# org.mozilla.Thunderbird (aka net.thunderbird.Thunderbird)
 
-For installation instructions, please visit app page on flathub at https://flathub.org/apps/details/org.mozilla.Thunderbird
+[Thunderbird](https://www.thunderbird.net/) for [Flatpak](https://flatpak.org/) installation instructions are available by [clicking here to visit the Thunderbird app page on Flathub](https://flathub.org/apps/details/org.mozilla.Thunderbird).
 
 ## Known issues:
 
-* In order to use old, non-flatpak Thunderbird profile you need to copy it from `~/.thunderbird` to `~/.var/app/org.mozilla.Thunderbird/.thunderbird`.
+* In order to use an old, non-[Flatpak](https://flatpak.org/) [Thunderbird profile](https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data) you need to copy it from<br>
+`~/.thunderbird`<br>
+to<br>
+`~/.var/app/org.mozilla.Thunderbird/.thunderbird`
 
-* For using GPG extensions like Enigmail you need to set (it may need sudo) #4: `flatpak override --filesystem=~/.gnupg org.mozilla.Thunderbird`.
+* [#4](https://github.com/flathub/org.mozilla.Thunderbird/issues/4)
+To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://addons.thunderbird.net/addon/enigmail/) you need to set (may require `sudo`)<br>
+`flatpak override --filesystem=~/.gnupg org.mozilla.Thunderbird`
 
-* For language support other than English you need to download and install it manually from https://addons.thunderbird.net/en-US/thunderbird/language-tools/ #3 .
+* [#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)
+Support for languages other than `English (US)` will require them to be manually downloaded and installed from<br>
+https://addons.thunderbird.net/language-tools/
