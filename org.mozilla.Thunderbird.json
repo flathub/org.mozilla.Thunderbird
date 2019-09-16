@@ -108,6 +108,8 @@
                 "./mach build",
                 "./mach install",
                 "rm -f /app/bin/node",
+                "rm -f /app/bin/thunderbird",
+                "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "for i in 16 22 24 32 48 64 128 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "mkdir -p /app/share/icons/hicolor/symbolic/apps",
                 "cp comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
@@ -137,6 +139,10 @@
                 {
                     "type": "file",
                     "path": "node-stdout-nonblocking-wrapper"
+                },
+                {
+                    "type": "file",
+                    "path": "thunderbird-wrapper"
                 }
             ]
         }
