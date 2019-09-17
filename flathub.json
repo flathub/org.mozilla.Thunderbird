@@ -1,4 +1,3 @@
 {
-	"end-of-life": "Currently no maintainer for the flathub package.",
 	"only-arches": ["x86_64"]
 }
