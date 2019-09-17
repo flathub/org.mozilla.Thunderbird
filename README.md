@@ -16,3 +16,6 @@ To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://a
 * [#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)
 Support for languages other than `English (US)` will require them to be manually downloaded and installed from<br>
 https://addons.thunderbird.net/language-tools/
+
+* In order to enable experimental Wayland backend (assuming your desktop runs under Wayland session) you need to set  (may require `sudo`)<br>
+`flatpak override --env=MOZ_ENABLE_WAYLAND=1 org.mozilla.Thunderbird`
