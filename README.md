@@ -11,17 +11,25 @@ To use a non-[Flatpak](https://flatpak.org/) [Thunderbird profile](https://suppo
 to<br>
 `~/.var/app/org.mozilla.Thunderbird/.thunderbird`
 
+In case Thunderbird doesn't recognize old profile and opens a new one instead, run:<br>
+`flatpak run org.mozilla.Thunderbird -P`<br>
+then select old profile and tick "Use the selected profile without asking on startup" box.
 #### Language support
 [#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)<br>
 `English (US)` is supported by default. Manually download and install other languages from<br>
-https://addons.thunderbird.net/language-tools/
+https://addons.thunderbird.net/language-tools/ or http://ftp.mozilla.org/pub/thunderbird/releases/68.1.0/linux-x86_64/xpi/
 
+You may need to set `intl.multilingual.enabled` to `true` in:<br>
+[Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Edit` > `Preferences` > `Advanced` > `General` > `Config Editor…`<br>
+and then choose your language in:<br>
+[Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Edit` > `Preferences` > `Advanced` > `General` > `Date and Time Formatting`
 #### New mail notifications
 [#11](https://github.com/flathub/org.mozilla.Thunderbird/issues/11#issuecomment-531987872)<br>
 To enable new mail notifications:<br>
 1. [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Edit` > `Preferences` > `Advanced` > `General` > `Config Editor…`, set `mail.biff.use_system_alert` to `true` (default)<br>
 1. [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Edit` > `Preferences` > `General` > Select `Customize…` for "Show an alert" and set "Show New Mail alert for:"
 
+Alternatively you may set `mail.biff.use_system_alert` to `false` which will make notifications non-native but clicking on them will open mail in Thunderbird.
 #### GPG extension support
 [#4](https://github.com/flathub/org.mozilla.Thunderbird/issues/4)<br>
 To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://addons.thunderbird.net/addon/enigmail/) set (may require `sudo`)<br>
