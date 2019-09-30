@@ -17,7 +17,7 @@ then select old profile and tick "Use the selected profile without asking on sta
 #### Language support
 [#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)<br>
 `English (US)` is supported by default. Manually download and install other languages from<br>
-https://addons.thunderbird.net/language-tools/ or http://ftp.mozilla.org/pub/thunderbird/releases/68.1.0/linux-x86_64/xpi/
+https://addons.thunderbird.net/language-tools/ or http://ftp.mozilla.org/pub/thunderbird/releases/68.1.1/linux-x86_64/xpi/
 
 You may need to set `intl.multilingual.enabled` to `true` in:<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Edit` > `Preferences` > `Advanced` > `General` > `Config Editor…`<br>
