@@ -114,7 +114,7 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
                 "append-ld-library-path": "/usr/lib/sdk/node10/lib",
                 "env":{
-                    "VERSION": "68.1.0",
+                    "VERSION": "68.1.1",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
                     "npm_config_nodedir": "/usr/lib/sdk/node10"
@@ -150,8 +150,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/68.1.0/source/thunderbird-68.1.0.source.tar.xz",
-                    "sha256": "de0e5c7d1d5576f451e386e4779f155b7af97621a4e22caac0c6dee3c9d76eef"
+                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/68.1.1/source/thunderbird-68.1.1.source.tar.xz",
+                    "sha256": "4f27fec94b2565a1d1da1c90975327a3d56e5918d517cc25bd8a5dd1a81983bb"
                 },
                 {
                     "type": "file",
