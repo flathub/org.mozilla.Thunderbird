@@ -29,9 +29,7 @@
         /* Needed for accessibility */
         "--talk-name=org.a11y.*",
         /* Make notifications work */
-        "--talk-name=org.freedesktop.Notifications",
-        /* Use portal to access local files */
-        "--env=GTK_USE_PORTAL=1"
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "cleanup": [
         "/include",
