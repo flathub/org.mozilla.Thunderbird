@@ -7,9 +7,9 @@ ac_add_options --enable-application=comm/mail
 ac_add_options --enable-official-branding
 
 # build lightning extension
-# disable because having it localized is very tricky
-# users should install it from extension store
-#ac_add_options --enable-calendar
+# it's not possible to localize it easily but Add-on store version is broken
+# https://github.com/flathub/org.mozilla.Thunderbird/issues/86
+ac_add_options --enable-calendar
 
 # Use gtk3
 ac_add_options --enable-default-toolkit=cairo-gtk3

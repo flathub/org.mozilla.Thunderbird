@@ -23,8 +23,7 @@ then navigate to<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
 and choose previously downloaded `.xpi` file. You may repeat the same with dictionaries. You need to restart app in order to make changes effective.
 
-#### Calendar extension
-[Calendar](https://www.thunderbird.net/calendar/) extension (Lightning) isn't bundled with Thunderbird app because it can be provided only in one locale (`English (US)`). Users are encouraged to download fully localized version from [extension store](https://addons.thunderbird.net/thunderbird/addon/lightning/) after enabling language of their choice as shown above.
+Note that Calendar extension won't be localized.
 
 #### New mail notifications
 ([#11](https://github.com/flathub/org.mozilla.Thunderbird/issues/11#issuecomment-531987872)) To enable new mail notifications:<br>
