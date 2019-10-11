@@ -158,13 +158,10 @@
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
                 "install -Dm644 distribution.ini /app/lib/thunderbird/distribution/distribution.ini",
-                "for i in 16 22 24 32 48 64 128 256;do mkdir -p /app/share/icons/hicolor/${i}x${i}/apps;cp comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
-                "mkdir -p /app/share/icons/hicolor/symbolic/apps",
-                "cp comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
-                "mkdir -p /app/share/applications",
-                "cp org.mozilla.Thunderbird.desktop /app/share/applications",
-                "mkdir -p /app/share/metainfo",
-                "cp org.mozilla.Thunderbird.appdata.xml /app/share/metainfo"
+                "for i in 16 22 24 32 48 64 128 256;do install -Dm644 comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
+                "install -Dm644 comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
+                "install -Dm644 org.mozilla.Thunderbird.desktop /app/share/applications/org.mozilla.Thunderbird.desktop",
+                "install -Dm644 org.mozilla.Thunderbird.appdata.xml /app/share/metainfo/org.mozilla.Thunderbird.appdata.xml"
             ],
             "sources": [
                 {
