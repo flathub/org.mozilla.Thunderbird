@@ -158,12 +158,14 @@
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
                 "install -Dm644 distribution.ini /app/lib/thunderbird/distribution/distribution.ini",
+                "for lang in langpacks/*.xpi;do install -Dm644 -t /app/lib/thunderbird/distribution/extensions $lang; done",
                 "for i in 16 22 24 32 48 64 128 256;do install -Dm644 comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "install -Dm644 comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
                 "install -Dm644 org.mozilla.Thunderbird.desktop /app/share/applications/org.mozilla.Thunderbird.desktop",
                 "install -Dm644 org.mozilla.Thunderbird.appdata.xml /app/share/metainfo/org.mozilla.Thunderbird.appdata.xml"
             ],
             "sources": [
+                "thunderbird-sources.json",
                 {
                     "type": "file",
                     "path": "mozconfig"
@@ -175,11 +177,6 @@
                 {
                     "type": "file",
                     "path": "org.mozilla.Thunderbird.appdata.xml"
-                },
-                {
-                    "type": "archive",
-                    "url": "https://ftp.mozilla.org/pub/thunderbird/releases/68.1.2/source/thunderbird-68.1.2.source.tar.xz",
-                    "sha256": "9444ec8718560d2b9e1b094bc57f1a8b3a275cac354ee0cf19f8cc483809d914"
                 },
                 {
                     "type": "file",
