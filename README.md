@@ -16,14 +16,15 @@ In case Thunderbird opens a new profile instead of the old one, run:<br>
 then select the old profile and tick "*Use the selected profile without asking on startup*" box.
 
 #### Language support
-([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) Only `English (US)` is enabled by default. In order to switch to language that matches one from your system, you need to download language file in `.xpi` format from:<br>
-https://addons.thunderbird.net/language-tools/ or <br>
-http://ftp.mozilla.org/pub/thunderbird/releases/68.1.1/linux-x86_64/xpi/ <br>
-then navigate to<br>
-[Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
-and choose previously downloaded `.xpi` file. You may repeat the same with dictionaries. You need to restart app in order to make changes effective.
+([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in app and one that matches host OS will be selected by default.
 
-Note that Calendar extension won't be localized.
+Dictionaries for languages other than *English* have to be downloaded manually from:<br>
+https://addons.thunderbird.net/language-tools/<br>
+and installed through:<br>
+[Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
+You may need to restart app in order to make changes effective.
+
+Note that Calendar extension is not localized and available only in *English (US)*.
 
 #### New mail notifications
 ([#11](https://github.com/flathub/org.mozilla.Thunderbird/issues/11#issuecomment-531987872)) To enable new mail notifications:<br>
