@@ -24,7 +24,7 @@ and installed through:<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
 You may need to restart app in order to make changes effective.
 
-Note that Calendar extension is not localized and available only in *English (US)*.
+([#88](https://github.com/flathub/org.mozilla.Thunderbird/issues/88)) Note that Calendar extension is not localized and available only in *English (US)*.
 
 #### New mail notifications
 ([#11](https://github.com/flathub/org.mozilla.Thunderbird/issues/11#issuecomment-531987872)) To enable new mail notifications:<br>
