@@ -18,7 +18,7 @@ then select the old profile and tick "*Use the selected profile without asking o
 #### Language support
 ([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in app and one that matches host OS will be selected by default.
 
-Dictionaries for languages other than *English* have to be downloaded manually from:<br>
+([#90](https://github.com/flathub/org.mozilla.Thunderbird/issues/90)) Dictionaries for languages other than *English* have to be downloaded manually from:<br>
 https://addons.thunderbird.net/language-tools/<br>
 and installed through:<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
