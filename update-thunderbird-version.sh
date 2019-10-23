@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eox pipefail
+set -eo pipefail
 
 if [ -z "$1" ]; then
   echo "Usage: $0 URL"
