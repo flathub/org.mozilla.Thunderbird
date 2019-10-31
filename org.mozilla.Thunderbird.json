@@ -143,7 +143,7 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
                 "append-ld-library-path": "/usr/lib/sdk/node10/lib",
                 "env":{
-                    "VERSION": "68.2.0",
+                    "VERSION": "68.2.1",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
                     "npm_config_nodedir": "/usr/lib/sdk/node10"
@@ -151,7 +151,7 @@
             },
             "build-commands": [
                 "install -Dm755 node-stdout-nonblocking-wrapper /app/bin/node",
-                "./mach build",
+                "./mach build -v",
                 "./mach install",
                 "rm -f /app/bin/node",
                 "rm -f /app/bin/thunderbird",
