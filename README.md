@@ -25,7 +25,7 @@ and installed through:<br>
 You may need to restart app in order to make changes effective.
 
 ([#88](https://github.com/flathub/org.mozilla.Thunderbird/issues/88)) Note that Calendar extension is not localized and available only in *English (US)*. For localized version you may remove bundled extension and install localized one from:<br>
-https://addons.thunderbird.net/thunderbird/addon/lightning/
+https://addons.thunderbird.net/addon/lightning/
 
 #### New mail notifications
 ([#11](https://github.com/flathub/org.mozilla.Thunderbird/issues/11#issuecomment-531987872)) To enable new mail notifications:<br>
