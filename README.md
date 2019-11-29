@@ -35,9 +35,12 @@ https://addons.thunderbird.net/thunderbird/addon/lightning/
 ([#79](https://github.com/flathub/org.mozilla.Thunderbird/issues/79#issuecomment-534298255)) Alternatively you may set `mail.biff.use_system_alert` to `false` which will make notifications non-native but clicking on them will open mail in Thunderbird.
 
 #### GPG extension support
-([#4](https://github.com/flathub/org.mozilla.Thunderbird/issues/4)) To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://addons.thunderbird.net/addon/enigmail/) set (may require `sudo`)<br>
+([#4](https://github.com/flathub/org.mozilla.Thunderbird/issues/4)) To use [GPG](https://gnupg.org/) extensions like the [Enigmail add-on](https://addons.thunderbird.net/addon/enigmail/) set (may require `sudo`):<br>
 `flatpak override --filesystem=~/.gnupg org.mozilla.Thunderbird`<br>
-`flatpak override --filesystem=xdg-run/gnupg:ro org.mozilla.Thunderbird`
+`flatpak override --filesystem=xdg-run/gnupg:ro org.mozilla.Thunderbird`<br>
+
+Additionally if gpg keys are protected by PIN:<br>
+`flatpak override --talk-name=org.gnome.keyring.SystemPrompter org.mozilla.Thunderbird`
 
 #### Wayland
 ([#75](https://github.com/flathub/org.mozilla.Thunderbird/issues/75)) To enable the experimental [Wayland](https://wayland.freedesktop.org/) backend (assuming the desktop session runs under a Wayland) set (may require `sudo`)<br>
