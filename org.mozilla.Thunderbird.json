@@ -38,15 +38,60 @@
     "cleanup": [
         "/include",
         "/lib/pkgconfig",
+        "/lib/girepository-1.0",
         "/share/pkgconfig",
         "/share/aclocal",
-        "/man",
+        "/share/gtk-doc",
+        "/share/doc",
+        "/share/info",
+        "/share/gir-1.0",
         "/share/man",
+        "/man",
         "*.la", "*.a"
     ],
     "modules": [
         "shared-modules/gtk2/gtk2.json",
         "shared-modules/dbus-glib/dbus-glib-0.110.json",
+            {
+            "name": "gcr",
+            "config-opts": [
+                "--disable-static",
+                "--disable-update-mime",
+                "--disable-schemas-compile",
+                "--enable-valgrind=no"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz",
+                    "sha256": "29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524"
+                }
+            ]
+        },
+            {
+            "name": "pinentry",
+            "config-opts": [
+                "--enable-pinentry-gnome3",
+                "--disable-ncurses",
+                "--disable-fallback-curses",
+                "--disable-pinentry-curses",
+                "--disable-pinentry-emacs",
+                "--disable-pinentry-gtk2",
+                "--disable-pinentry-qt5",
+                "--disable-pinentry-tty",
+                "--disable-pinentry-tqt",
+                "--disable-pinentry-fltk",
+                "--without-libcap",
+                "--enable-libsecret=no"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2",
+                    "sha256": "68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570"
+                }
+            ]
+        },
         {
             "name": "pcsc-lite",
             "config-opts": [
