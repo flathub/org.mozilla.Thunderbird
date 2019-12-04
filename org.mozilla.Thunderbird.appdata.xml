@@ -46,6 +46,7 @@
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
  
   <releases>
+    <release date="2019-12-03" version="68.3.0" urgency="medium" />
     <release date="2019-11-07" version="68.2.2" urgency="medium" />
     <release date="2019-10-31" version="68.2.1" urgency="medium" />
     <release date="2019-10-22" version="68.2.0" urgency="medium" />
