@@ -188,7 +188,7 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
                 "append-ld-library-path": "/usr/lib/sdk/node10/lib",
                 "env":{
-                    "VERSION": "68.2.2",
+                    "VERSION": "68.3.0",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
                     "npm_config_nodedir": "/usr/lib/sdk/node10"
