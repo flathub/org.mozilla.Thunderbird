@@ -173,8 +173,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/eqrion/cbindgen.git",
-                    "tag": "v0.9.1",
-                    "commit": "8e4db4c17fbdc0cfa9b98cfe9d47ca6263858def"
+                    "tag": "v0.12.1",
+                    "commit": "f5d76c44c466b47d1c776acd9974df838f30d431"
                 },
                 "cbindgen-dependencies.json"
             ]
