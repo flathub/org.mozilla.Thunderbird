@@ -82,8 +82,7 @@
                 "--disable-pinentry-tqt",
                 "--disable-pinentry-fltk",
                 "--without-libcap",
-                "--enable-libsecret=no",
-                "--disable-rpath"
+                "--enable-libsecret=no"
             ],
             "sources": [
                 {
