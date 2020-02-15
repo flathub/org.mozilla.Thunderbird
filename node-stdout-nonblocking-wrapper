@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /usr/lib/sdk/node12/bin/node "$@" 2>&1 | cat -
