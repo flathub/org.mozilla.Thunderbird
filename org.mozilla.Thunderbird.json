@@ -192,10 +192,8 @@
                 }
             },
             "build-commands": [
-                "install -Dm755 node-stdout-nonblocking-wrapper /app/bin/node",
                 "./mach build -v",
                 "./mach install",
-                "rm -f /app/bin/node",
                 "rm -f /app/bin/thunderbird",
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
@@ -219,10 +217,6 @@
                 {
                     "type": "file",
                     "path": "org.mozilla.Thunderbird.appdata.xml"
-                },
-                {
-                    "type": "file",
-                    "path": "node-stdout-nonblocking-wrapper"
                 },
                 {
                     "type": "file",
