@@ -5,7 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.node10"
+        "org.freedesktop.Sdk.Extension.node12"
     ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
@@ -182,13 +182,13 @@
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node10/bin",
-                "append-ld-library-path": "/usr/lib/sdk/node10/lib",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node12/bin",
+                "append-ld-library-path": "/usr/lib/sdk/node12/lib",
                 "env":{
                     "VERSION": "68.5.0",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
-                    "npm_config_nodedir": "/usr/lib/sdk/node10"
+                    "npm_config_nodedir": "/usr/lib/sdk/node12"
                 }
             },
             "build-commands": [
