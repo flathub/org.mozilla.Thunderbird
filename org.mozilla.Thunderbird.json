@@ -199,7 +199,7 @@
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
                 "install -Dm644 distribution.ini /app/lib/thunderbird/distribution/distribution.ini",
                 "install -Dm644 default-preferences.js /app/lib/thunderbird/defaults/pref/default-preferences.js",
-                "for lang in langpacks/*.xpi;do install -Dm644 -t /app/lib/thunderbird/distribution/extensions $lang; done",
+                "for lang in langpacks/*.xpi;do export locale=$(basename -s .xpi $lang); install -Dm644 -t /app/share/runtime/locale/${locale:9:2}/ $lang; ln -sf /app/share/runtime/locale/${locale:9:2}/$(basename $lang) /app/lib/thunderbird/distribution/extensions/$(basename $lang); done",
                 "for i in 16 22 24 32 48 64 128 256;do install -Dm644 comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "install -Dm644 comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
                 "install -Dm644 org.mozilla.Thunderbird.desktop /app/share/applications/org.mozilla.Thunderbird.desktop",
