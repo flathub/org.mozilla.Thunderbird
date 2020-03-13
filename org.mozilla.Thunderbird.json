@@ -198,6 +198,7 @@
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
                 "install -Dm644 distribution.ini /app/lib/thunderbird/distribution/distribution.ini",
+                "install -Dm644 default-preferences.js /app/lib/thunderbird/defaults/pref/default-preferences.js",
                 "for lang in langpacks/*.xpi;do install -Dm644 -t /app/lib/thunderbird/distribution/extensions $lang; done",
                 "for i in 16 22 24 32 48 64 128 256;do install -Dm644 comm/mail/branding/thunderbird/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/thunderbird.png;done",
                 "install -Dm644 comm/mail/branding/thunderbird/TB-symbolic.svg /app/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
@@ -225,6 +226,10 @@
                 {
                     "type": "file",
                     "path": "distribution.ini"
+                },
+                {
+                    "type": "file",
+                    "path": "default-preferences.js"
                 },
                 {
                     "type": "script",
