@@ -227,8 +227,12 @@
                     "path": "distribution.ini"
                 },
                 {
-                    "type": "file",
-                    "path": "thunderbird-wrapper"
+                    "type": "script",
+                    "dest-filename": "thunderbird-wrapper",
+                    "commands": [
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "exec /app/lib/thunderbird/thunderbird \"$@\""
+                    ]
                 }
             ]
         }
