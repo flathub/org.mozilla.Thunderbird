@@ -16,9 +16,9 @@ In case Thunderbird opens a new profile instead of the old one, run:<br>
 then select the old profile and tick "*Use the selected profile without asking on startup*" box.
 
 #### Language support
-([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in app and one that matches host OS will be selected by default.
+([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in `org.mozilla.Thunderbird.Locale` extension. One locale that matches host OS locale will be installed and selected by default. For instructions about how to enable more locales in flatpak take a look at https://flatpak.readthedocs.io/en/latest/flatpak-command-reference.html#flatpak-config
 
-([#90](https://github.com/flathub/org.mozilla.Thunderbird/issues/90)) Dictionaries for languages other than *English* have to be downloaded manually from:<br>
+([#90](https://github.com/flathub/org.mozilla.Thunderbird/issues/90)) Dictionaries availabiity is similar as for locales. They also could be downloaded manually from:<br>
 https://addons.thunderbird.net/language-tools/<br>
 and installed through:<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
