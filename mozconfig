@@ -46,11 +46,6 @@ ac_add_options --disable-updater
 ac_add_options --disable-gconf
 ac_add_options --disable-startup-notification
 
-# Fix potential crashes (remove for TB 68)
-# https://bugs.archlinux.org/task/60779
-# https://bugzilla.mozilla.org/show_bug.cgi?id=1423822
-ac_add_options --disable-elf-hack
-
 # Needed to enable breakpad in application.ini
 export MOZILLA_OFFICIAL=1
 
