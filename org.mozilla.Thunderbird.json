@@ -185,7 +185,7 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node12/bin",
                 "append-ld-library-path": "/usr/lib/sdk/node12/lib",
                 "env":{
-                    "VERSION": "68.8.0",
+                    "VERSION": "68.8.1",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
                     "npm_config_nodedir": "/usr/lib/sdk/node12"
