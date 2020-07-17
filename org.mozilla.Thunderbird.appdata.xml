@@ -46,7 +46,7 @@
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
  
   <releases>
-    <release version="68.10.0" date="2020-07-01"/>
+    <release version="78.0" date="2020-07-17"/>
   </releases>
  
   <project_group>Mozilla</project_group>
