@@ -1,10 +1,12 @@
 # General configuration options
 ac_add_options --prefix=/app
+ac_add_options --enable-release
+ac_add_options --enable-official-branding
+export MOZ_NOSPAM=1
 
 # build thunderbird
 mk_add_options MOZ_CO_PROJECT=mail
 ac_add_options --enable-application=comm/mail
-ac_add_options --enable-official-branding
 
 # build lightning extension
 # it's not possible to localize it easily but Add-on store version is broken
@@ -31,6 +33,12 @@ ac_add_options --enable-system-pixman
 
 # use optimizations
 ac_add_options --enable-optimize
+
+# elfhack may cause issues when building with clang
+# https://bugzilla.mozilla.org/show_bug.cgi?id=1482204
+# https://bugzilla.mozilla.org/show_bug.cgi?id=1483822
+# It also fails the build when using gcc
+ac_add_options --disable-elf-hack
 
 # Retain debug symbols
 ac_add_options --disable-strip
