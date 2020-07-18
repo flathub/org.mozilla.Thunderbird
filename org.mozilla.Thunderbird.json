@@ -194,6 +194,7 @@
                 }
             },
             "build-commands": [
+                "./mach configure",
                 "./mach build -v",
                 "./mach install",
                 "rm -f /app/bin/thunderbird",
