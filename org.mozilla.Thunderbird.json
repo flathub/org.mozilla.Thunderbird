@@ -188,7 +188,8 @@
                     "VERSION": "68.10.0",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
-                    "npm_config_nodedir": "/usr/lib/sdk/node12"
+                    "npm_config_nodedir": "/usr/lib/sdk/node12",
+                    "CARGO_PROFILE_RELEASE_LTO": "true"
                 }
             },
             "build-commands": [
