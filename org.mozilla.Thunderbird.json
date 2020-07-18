@@ -158,7 +158,8 @@
             "name": "cbindgen",
             "buildsystem": "simple",
             "build-commands": [
-                "cargo build --release --locked",
+                "cargo --offline fetch --manifest-path Cargo.toml --verbose",
+                "cargo --offline build --release --verbose",
                 "install -Dm 755 target/release/cbindgen -t /app/bin"
             ],
             "build-options":{
@@ -172,8 +173,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/eqrion/cbindgen.git",
-                    "tag": "v0.12.1",
-                    "commit": "f5d76c44c466b47d1c776acd9974df838f30d431"
+                    "tag": "v0.14.3",
+                    "commit": "cc2876f709808a52d132a5f84e53ca1964eb92db"
                 },
                 "cbindgen-dependencies.json"
             ]
