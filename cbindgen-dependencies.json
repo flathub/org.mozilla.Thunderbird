@@ -1,12 +1,6 @@
 [
     {
         "type": "file",
-        "url": "data:%5Bsource.crates-io%5D%0Areplace-with%20%3D%20%22vendored-sources%22%0A%0A%5Bsource.vendored-sources%5D%0Adirectory%20%3D%20%22cargo/vendor%22%0A",
-        "dest": "cargo",
-        "dest-filename": "config"
-    },
-    {
-        "type": "file",
         "url": "https://static.crates.io/crates/ansi_term/ansi_term-0.11.0.crate",
         "sha256": "ee49baf6cb617b853aa8d93bf420db2383fab46d314482ca2803b40d5fde979b",
         "dest": "cargo/vendor",
@@ -94,6 +88,19 @@
         "type": "file",
         "url": "data:%7B%22package%22%3A%20%22e7db7ca94ed4cd01190ceee0d8a8052f08a247aa1b469a7f68c6a3b71afcf407%22%2C%20%22files%22%3A%20%7B%7D%7D",
         "dest": "cargo/vendor/getrandom-0.1.13",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "file",
+        "url": "https://static.crates.io/crates/heck/heck-0.3.1.crate",
+        "sha256": "20564e78d53d2bb135c343b3f47714a56af2061f1c928fdb541dc7b9fdd94205",
+        "dest": "cargo/vendor",
+        "dest-filename": "heck-0.3.1.crate"
+    },
+    {
+        "type": "file",
+        "url": "data:%7B%22package%22%3A%20%2220564e78d53d2bb135c343b3f47714a56af2061f1c928fdb541dc7b9fdd94205%22%2C%20%22files%22%3A%20%7B%7D%7D",
+        "dest": "cargo/vendor/heck-0.3.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -371,6 +378,19 @@
     },
     {
         "type": "file",
+        "url": "https://static.crates.io/crates/unicode-segmentation/unicode-segmentation-1.6.0.crate",
+        "sha256": "e83e153d1053cbb5a118eeff7fd5be06ed99153f00dbcd8ae310c5fb2b22edc0",
+        "dest": "cargo/vendor",
+        "dest-filename": "unicode-segmentation-1.6.0.crate"
+    },
+    {
+        "type": "file",
+        "url": "data:%7B%22package%22%3A%20%22e83e153d1053cbb5a118eeff7fd5be06ed99153f00dbcd8ae310c5fb2b22edc0%22%2C%20%22files%22%3A%20%7B%7D%7D",
+        "dest": "cargo/vendor/unicode-segmentation-1.6.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "file",
         "url": "https://static.crates.io/crates/unicode-width/unicode-width-0.1.7.crate",
         "sha256": "caaa9d531767d1ff2150b9332433f32a24622147e5ebb1f26409d5da67afd479",
         "dest": "cargo/vendor",
@@ -466,5 +486,11 @@
         "commands": [
             "for c in *.crate; do tar -xf $c; done"
         ]
+    },
+    {
+        "type": "file",
+        "url": "data:%5Bsource.vendored-sources%5D%0Adirectory%20%3D%20%22cargo/vendor%22%0A%0A%5Bsource.crates-io%5D%0Areplace-with%20%3D%20%22vendored-sources%22%0A",
+        "dest": "cargo",
+        "dest-filename": "config"
     }
 ]
