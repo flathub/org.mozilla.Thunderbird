@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Exec=thunderbird %u
+Exec=thunderbird %f
 Icon=thunderbird
 Terminal=false
 Type=Application
