@@ -186,11 +186,9 @@
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node12/bin",
                 "append-ld-library-path": "/usr/lib/sdk/node12/lib",
                 "env":{
-                    "VERSION": "78.0",
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
-                    "npm_config_nodedir": "/usr/lib/sdk/node12",
-                    "CARGO_PROFILE_RELEASE_LTO": "true"
+                    "npm_config_nodedir": "/usr/lib/sdk/node12"
                 }
             },
             "build-commands": [
@@ -234,6 +232,10 @@
                 {
                     "type": "file",
                     "path": "default-preferences.js"
+                },
+                {
+                    "type": "patch",
+                    "path": "rust145.patch"
                 },
                 {
                     "type": "script",

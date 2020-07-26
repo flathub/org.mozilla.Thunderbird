@@ -1,0 +1,36 @@
+
+# HG changeset patch
+# User Mike Hommey <mh+mozilla@glandium.org>
+# Date 1595261136 0
+# Node ID e5dfd0f87e3b09556e639f3e7bf2b96eca9051ee
+# Parent  f432b1b976fc898e40d69dc3107fe6e4a17de972
+Bug 1640982 - Set CARGO_PROFILE_RELEASE_LTO=true when enabling rust LTO. r=rstewart, a=RyanVM
+
+Differential Revision: https://phabricator.services.mozilla.com/D84098
+
+diff --git a/config/makefiles/rust.mk b/config/makefiles/rust.mk
+--- a/config/makefiles/rust.mk
++++ b/config/makefiles/rust.mk
+@@ -56,17 +56,21 @@ endif
+ # These flags are passed via `cargo rustc` and only apply to the final rustc
+ # invocation (i.e., only the top-level crate, not its dependencies).
+ cargo_rustc_flags = $(CARGO_RUSTCFLAGS)
+ ifndef DEVELOPER_OPTIONS
+ ifndef MOZ_DEBUG_RUST
+ # Enable link-time optimization for release builds, but not when linking
+ # gkrust_gtest.
+ ifeq (,$(findstring gkrust_gtest,$(RUST_LIBRARY_FILE)))
++# Pass -Clto for older versions of rust, and CARGO_PROFILE_RELEASE_LTO=true
++# for newer ones that support it. Combining the latter with -Clto works, so
++# set both everywhere.
+ cargo_rustc_flags += -Clto
++export CARGO_PROFILE_RELEASE_LTO=true
+ endif
+ endif
+ endif
+ 
+ ifdef CARGO_INCREMENTAL
+ export CARGO_INCREMENTAL
+ endif
+ 
+
