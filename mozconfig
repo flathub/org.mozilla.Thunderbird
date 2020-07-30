@@ -34,11 +34,11 @@ ac_add_options --enable-system-pixman
 # use optimizations
 ac_add_options --enable-optimize
 
-# elfhack may cause issues when building with clang
+# elfhack may cause issues when building with lld
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1482204
 # https://bugzilla.mozilla.org/show_bug.cgi?id=1483822
 # It also fails the build when using gcc
-ac_add_options --disable-elf-hack
+#ac_add_options --disable-elf-hack
 
 # Retain debug symbols
 ac_add_options --disable-strip
