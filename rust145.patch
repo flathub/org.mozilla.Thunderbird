@@ -1,0 +1,14 @@
+Extracted from https://hg.mozilla.org/releases/mozilla-beta/raw-rev/5049f067f189
+
+diff -ur a/config/makefiles/rust.mk b/config/makefiles/rust.mk
+--- a/config/makefiles/rust.mk
++++ b/config/makefiles/rust.mk
+@@ -51,7 +51,7 @@
+ # for newer ones that support it. Combining the latter with -Clto works, so
+ # set both everywhere.
+ cargo_rustc_flags += -C lto
+-export CARGO_PROFILE_RELEASE_LTO=true
++RUSTFLAGS += -Cembed-bitcode=yes
+ endif
+ endif
+ 
