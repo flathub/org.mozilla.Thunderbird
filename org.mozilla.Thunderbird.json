@@ -192,9 +192,7 @@
                 }
             },
             "build-commands": [
-                "./mach configure",
-                "./mach build -v",
-                "./mach install",
+                "export MOZ_BUILD_DATE=$(head -1 ./sourcestamp.txt); ./mach configure; ./mach build -v; ./mach install",
                 "rm -f /app/bin/thunderbird",
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
