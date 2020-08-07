@@ -19,6 +19,7 @@ ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
 #error: no member named 'frame_flags' in 'vpx_svc_ref_frame_config'
 #ac_add_options --with-system-libvpx
+ac_add_options --with-system-bz2
 # requires icu >= 67.1
 #ac_add_options --with-system-icu
 # requires nss >=3.53.1
