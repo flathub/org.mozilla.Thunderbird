@@ -33,7 +33,11 @@
         /* Smartcard access - Requires flatpak >= 1.3.2 */
         "--socket=pcsc",
         /* Older versions will fail with above permission */
-        "--require-version=0.10.3"
+        "--require-version=0.10.3",
+        /* GPG support */
+        "--filesystem=~/.gnupg",
+        "--filesystem=xdg-run/gnupg:ro",
+        "--talk-name=org.gnome.keyring.SystemPrompter"
     ],
     "cleanup": [
         "/include",
