@@ -231,10 +231,6 @@
                     "path": "default-preferences.js"
                 },
                 {
-                    "type": "patch",
-                    "path": "rust145.patch"
-                },
-                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
