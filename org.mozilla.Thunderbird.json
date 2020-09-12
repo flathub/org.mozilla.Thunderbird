@@ -236,6 +236,10 @@
                     "path": "default-preferences.js"
                 },
                 {
+                    "type": "patch",
+                    "path": "fix.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
