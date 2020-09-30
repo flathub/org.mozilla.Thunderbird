@@ -2,434 +2,469 @@
     
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ar.xpi",
-        "sha256": "e9456d69ebf490d2b2dd0a9732e21b77508a6d86888f539ac435440dc0d73b1f",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/af.xpi",
+        "sha256": "66bd4513343f91e3500a878604cac7de018689f691e5d68d9bf0f8563cc8aa6e",
+        "dest": "langpacks/",
+        "dest-filename": "langpack-af@thunderbird.mozilla.org.xpi"
+    },
+    {
+        "type": "file",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ar.xpi",
+        "sha256": "6968800c89dba29e7f439e6a251d2b0634a4665dc777010fcb9535a29d843283",
         "dest": "langpacks/",
         "dest-filename": "langpack-ar@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ast.xpi",
-        "sha256": "107c073b5ff0af969a7886523ed8447bee97c12ba8752beb68084a38538d2659",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ast.xpi",
+        "sha256": "27f57890f535a2957265d218d8ede636a7189c50ea71f6caf4676e37c416bf2c",
         "dest": "langpacks/",
         "dest-filename": "langpack-ast@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/be.xpi",
-        "sha256": "0f5461c5c9f138fd6d321dbce76ea8880df76c6051b2e34222a8709fc5824891",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/be.xpi",
+        "sha256": "21823e64d5fb41a0f413b79a07869d221802d5fab9950f12f9e407a0a6837abf",
         "dest": "langpacks/",
         "dest-filename": "langpack-be@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/bg.xpi",
-        "sha256": "4219193972f22db5287bbc9b3de2edd25e25d3fb39400ddd674e655ced8d131b",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/bg.xpi",
+        "sha256": "341b91fb5362e506c6c03dbe532d1d3861892869dbb6b57de5ae04b06db36118",
         "dest": "langpacks/",
         "dest-filename": "langpack-bg@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/br.xpi",
-        "sha256": "13357a031aea34ee5f3d93f8da819ac8d0ebafca34331cb515cdf3dc8c3ebaf1",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/br.xpi",
+        "sha256": "52d7ec7d3d1710d896f6283179956e5fc0bb931bc6d0571dd43b6f7998aeb3ae",
         "dest": "langpacks/",
         "dest-filename": "langpack-br@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/cak.xpi",
-        "sha256": "324119c6d538a3a4b7cf85b54c4984dddc4edc3a3d63efae74da222ea80f9b13",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/cak.xpi",
+        "sha256": "9daa0734ae69023a26cd46d8dc33ff2a494355d1215431e621f459c9236326c8",
         "dest": "langpacks/",
         "dest-filename": "langpack-cak@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ca.xpi",
-        "sha256": "65aa6f338fc8f0e7e9b2a4c8ef21da3b4ddcf2ecbf0752c735c905d62b5ca0cf",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ca.xpi",
+        "sha256": "b06c975da8c599575b0e8db0369057c37c9c397b03ab013b6e4c780283f2756d",
         "dest": "langpacks/",
         "dest-filename": "langpack-ca@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/cs.xpi",
-        "sha256": "326bd58eaa320449b472aabb9b5cd92fb6f681f1a739b372aefc1f49136c76b5",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/cs.xpi",
+        "sha256": "619bf91fe8f494f75f4f1899e1fd0267531a4bc11e7e65f643f52576ba027ee4",
         "dest": "langpacks/",
         "dest-filename": "langpack-cs@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/cy.xpi",
-        "sha256": "099ef087a81436ce10c7525ce6795af4737b0329775b0504483a8bb67ec118fa",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/cy.xpi",
+        "sha256": "98259869a2dde59e9653a6a422eedc64ce9df56279e92ca570cf809d1dc51004",
         "dest": "langpacks/",
         "dest-filename": "langpack-cy@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/da.xpi",
-        "sha256": "b1c30da0a1eda837bb09ec35063c764e473e285f58ba70d1d41e4520e34010ff",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/da.xpi",
+        "sha256": "d9a82c457837f1c5097cfe79572e021dce3082f5854dcb1fe4e37e15732df4f4",
         "dest": "langpacks/",
         "dest-filename": "langpack-da@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/de.xpi",
-        "sha256": "23beb45709ddbdba152fdc671d2150f7808ca5ea52e2ef3bf1ee1e1cc6ffe16d",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/de.xpi",
+        "sha256": "d852faffa817cf4d07e3ee660d8a5deda89e307ce15f08b09f9ca79c68bbd1ad",
         "dest": "langpacks/",
         "dest-filename": "langpack-de@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/dsb.xpi",
-        "sha256": "3f6edcbffc303c5099e26fc385079c57ad9487bcc523c0a4980c5416690fbe34",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/dsb.xpi",
+        "sha256": "d20c9106f216857885f6361f2986bf19e96b01ee32b68728035a749d6c1f3c13",
         "dest": "langpacks/",
         "dest-filename": "langpack-dsb@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/el.xpi",
-        "sha256": "e2a4b15b8d47b0de7942fc77e7a0f6ac0a8edc4c647207383befd32750dbb0d3",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/el.xpi",
+        "sha256": "33cec55205146d862d76e34dc82058a0c8ffe8502cc8dce1e62c2ab2d21ec6eb",
         "dest": "langpacks/",
         "dest-filename": "langpack-el@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/en-GB.xpi",
-        "sha256": "dba8caaa04e7114091dbf1c31ecd47fd3e6c3204e61e8fa451f7919213577106",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/en-CA.xpi",
+        "sha256": "3a24a9f4f5cf76594ccc587c6557d7e59cfba950698d7eba0f88338c0c4a59f1",
+        "dest": "langpacks/",
+        "dest-filename": "langpack-en-CA@thunderbird.mozilla.org.xpi"
+    },
+    {
+        "type": "file",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/en-GB.xpi",
+        "sha256": "6e962b39f8b93cc8d29256cdc572fac526631bef6f093a68e397042bc232a752",
         "dest": "langpacks/",
         "dest-filename": "langpack-en-GB@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/en-US.xpi",
-        "sha256": "0284ae3c5985facd287f4cf2d167b1b98f11f0327caf4d96291e6a43a173380f",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/en-US.xpi",
+        "sha256": "748f1bddb03e85e2e44ee0450d4d4d5282029baed76348f2a1ada931b6d00370",
         "dest": "langpacks/",
         "dest-filename": "langpack-en-US@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/es-AR.xpi",
-        "sha256": "f16858cbb758a737f138735e9c3f78ac0d61ebdac4b9b7e1e181bd6bbc4daa27",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/es-AR.xpi",
+        "sha256": "79db60e9c0429cca6402a5f804befd287c366f132c3331589b0966eeff8c17e0",
         "dest": "langpacks/",
         "dest-filename": "langpack-es-AR@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/es-ES.xpi",
-        "sha256": "980c1776f6fcc7a47be48e47b8b34ce7886340e794f2b61220d584a3887687c9",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/es-ES.xpi",
+        "sha256": "94fa4fef6215ebce9e9b5cc43b6cf991ae346004df3c918731afd149c3d3bd92",
         "dest": "langpacks/",
         "dest-filename": "langpack-es-ES@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/et.xpi",
-        "sha256": "2d39afb4d0b7f3309ac07b45f7e7a8ff753b4d4852ec588f19380b0cfdf0a8fe",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/et.xpi",
+        "sha256": "54b34f00c2fd021eb5adc41fffc4833926f3de0a9b4f23aec457dcc8b4c1cdbb",
         "dest": "langpacks/",
         "dest-filename": "langpack-et@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/eu.xpi",
-        "sha256": "8c6e0d287c5dc25751a74c7a5662d5e4eb18a10f96f8aca5bd6a14453cb4385c",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/eu.xpi",
+        "sha256": "e586a5d09d6965b8c87529740894dcd6c33b231d2d02008ff645781151711c1b",
         "dest": "langpacks/",
         "dest-filename": "langpack-eu@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/fi.xpi",
-        "sha256": "11111cfa0c149c58fa7c7591e427a3d6437ca3ad49b00f267af189ff12dfa00c",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/fa.xpi",
+        "sha256": "e619dfb5de6f5b1eb1c9e52c8d764d568d31bf31ee442504593563a4e92ab4a0",
+        "dest": "langpacks/",
+        "dest-filename": "langpack-fa@thunderbird.mozilla.org.xpi"
+    },
+    {
+        "type": "file",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/fi.xpi",
+        "sha256": "8995500a2529ef1d09fd66cb1d32a5d33f2227effcdf0b830752e774819dc478",
         "dest": "langpacks/",
         "dest-filename": "langpack-fi@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/fr.xpi",
-        "sha256": "1208bb9bfa4bc19a3de3af7bee7120fe36bc1412e61a7f197a2305842b42b448",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/fr.xpi",
+        "sha256": "3f637f388008e7ab0a506cae9bd8a250bf45ab117f1710c103e36fcf94ddb478",
         "dest": "langpacks/",
         "dest-filename": "langpack-fr@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/fy-NL.xpi",
-        "sha256": "c8e056a8200114c216dbff50105f8e6cd16e4fbe75dd6d982270df04001d1173",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/fy-NL.xpi",
+        "sha256": "e3a92c4c8c34b52317368458d881972a021c135940e2da81a3a38ce875421df0",
         "dest": "langpacks/",
         "dest-filename": "langpack-fy-NL@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ga-IE.xpi",
-        "sha256": "49fd83485aa15d8563ba582d06d82ab59a3a88f8a0bfddc517878877943e91fe",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ga-IE.xpi",
+        "sha256": "3be23774132e9d543b2128ab41f6d79d7abe7997cd7908f864c91c05783e5c07",
         "dest": "langpacks/",
         "dest-filename": "langpack-ga-IE@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/gd.xpi",
-        "sha256": "f80ab30e66d91925cf2f5ba880d95272e0948d1a815655f1eaf62530a0862f27",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/gd.xpi",
+        "sha256": "87aa47d2ae13c3c42671db7e2fbd2d5bba839a43e1c39768877ef6ef808e5719",
         "dest": "langpacks/",
         "dest-filename": "langpack-gd@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/gl.xpi",
-        "sha256": "46544f2a179ce9550e1099a9914aa8521fd2a22f73540e1de5b32beae49a62c4",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/gl.xpi",
+        "sha256": "0bb73c20ea364618b9edb526ae1d9b815bdc252bda41662ac791d54c41759dda",
         "dest": "langpacks/",
         "dest-filename": "langpack-gl@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/he.xpi",
-        "sha256": "984ee44c0bc6b3ad421bc27d591b09dc92d70bafcc6dc28f07a22f74d4812aaf",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/he.xpi",
+        "sha256": "f594192138198dcec4628cb2dc13cca535047122d2aeea0ca4a895a5199d731b",
         "dest": "langpacks/",
         "dest-filename": "langpack-he@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/hr.xpi",
-        "sha256": "246b42acae78ac7334e968b9209917f2975b5a6e4de7deefb103af51df7b6893",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/hr.xpi",
+        "sha256": "52ce194fb1b2d403419dca617be52a1531b414640361477c8428ea209242809d",
         "dest": "langpacks/",
         "dest-filename": "langpack-hr@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/hsb.xpi",
-        "sha256": "498344b40ad9d4da13fa06401715cf2a32aef44c6116192f194663bfc518f2ed",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/hsb.xpi",
+        "sha256": "fa66b0d4c62dafb4f6643dcb8c673b60d398dbfd3abab5315229ef8ca37c367b",
         "dest": "langpacks/",
         "dest-filename": "langpack-hsb@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/hu.xpi",
-        "sha256": "226840deb3dc0ddfa80cd311fff3eea9cc2b51daa371e3080299e4827cf3c577",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/hu.xpi",
+        "sha256": "01f78c3c85498b85fa6ebdf5cab936c0d68e691b66da0f5566b0e71861e94218",
         "dest": "langpacks/",
         "dest-filename": "langpack-hu@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/hy-AM.xpi",
-        "sha256": "f22f041b598e0be5489d60f215202c4f5754467a116066a75481e9f9e3eb29a2",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/hy-AM.xpi",
+        "sha256": "f827c0ee4cbe936884ba3d5777821154e910484ae2159102dcd40c67b55f6a4e",
         "dest": "langpacks/",
         "dest-filename": "langpack-hy-AM@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/id.xpi",
-        "sha256": "bfefd69189801d4fff3335dd9312f496d7c058346fd74c8b7e0780406e80ee1b",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/id.xpi",
+        "sha256": "9fd59ab7201cd3a72fa109e3ed368afb684d3518b71da887ad2036e32eda25b0",
         "dest": "langpacks/",
         "dest-filename": "langpack-id@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/is.xpi",
-        "sha256": "d921aa36bb04a16b7b7d9f8f5e9cad4016ffb920fbb84343c463ddd593e16e97",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/is.xpi",
+        "sha256": "fe58d890322666a161203db29794f45d3f5925319d4c924b330b2d1ac0a58e7d",
         "dest": "langpacks/",
         "dest-filename": "langpack-is@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/it.xpi",
-        "sha256": "fa56c22c7b9ed9ce53544618c9777dbabb236ee77b5d9b5889cae264283655dc",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/it.xpi",
+        "sha256": "37e2818aeb4f119c8b14ac827cb265f7e78fc18daf9e4ae8bb1a972c841c276c",
         "dest": "langpacks/",
         "dest-filename": "langpack-it@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ja.xpi",
-        "sha256": "f02f2f4506758f4c101bb7ae6b43a79d75888c0ed0f9038a52f3fd3d23c20587",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ja.xpi",
+        "sha256": "01824ca644d0d32211c1d527b02401d01d951722508e11458dd7d01ebcd5dacc",
         "dest": "langpacks/",
         "dest-filename": "langpack-ja@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/kab.xpi",
-        "sha256": "7a39c5d0231bb0094b3530440a8ebca996e49ff6f51d04f4034a454bebc68441",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/kab.xpi",
+        "sha256": "87113dc9115496c4abc61dd0d6824d3917ae610a2b4f2e0ba3e83a7bc808ff3b",
         "dest": "langpacks/",
         "dest-filename": "langpack-kab@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ka.xpi",
-        "sha256": "f78b8477c01d83c54a97bdebb12293c898a3bc7a5ba79e32d27f4a402c1bdf4a",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ka.xpi",
+        "sha256": "bfa9d9b001edeeed908c155ef7684e17df2f257eda3165597b1e8b7f41bde751",
         "dest": "langpacks/",
         "dest-filename": "langpack-ka@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/kk.xpi",
-        "sha256": "49635b3561b9960ae372568cf8fee779c6cfac3f18405cd4552a4438b1b82de6",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/kk.xpi",
+        "sha256": "4df6292838f979b5a017ae331ad8e99889fe70c6886c2183c34f06e95e080e07",
         "dest": "langpacks/",
         "dest-filename": "langpack-kk@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ko.xpi",
-        "sha256": "3a5eceffd620820eb2218771f239bc3cce5689c32f8828e0bda34d7642b7ddb5",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ko.xpi",
+        "sha256": "e87d7ba21597b8a521468260bdd9ebb3090f45acd57df4a65d782fbdfe4e0fc7",
         "dest": "langpacks/",
         "dest-filename": "langpack-ko@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/lt.xpi",
-        "sha256": "24e2f2922635336b3108c031259fe83fbe2f77cc976428967e424421ad190f7b",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/lt.xpi",
+        "sha256": "d852835116bc97f14d039781e68200d27b2ac315bef8bc777198d726a6821f4a",
         "dest": "langpacks/",
         "dest-filename": "langpack-lt@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ms.xpi",
-        "sha256": "86c2392d6fa12ccdc77088b50dc0fb91e65ecb7a038b21fcd36abbf568c7053e",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ms.xpi",
+        "sha256": "29cdf184a6c8102549270cdddc80775fc25059e383aaed1ec900adcfc048cd0e",
         "dest": "langpacks/",
         "dest-filename": "langpack-ms@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/nb-NO.xpi",
-        "sha256": "e5afed49a6faa52d50bd8341d7b0c8a6d84e5754f8e7d2ee4fde2be4caea7245",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/nb-NO.xpi",
+        "sha256": "4f5c425ee3c7437d4e0f0c285720d5eb5a9f32b4cec748b14d81d3240150b309",
         "dest": "langpacks/",
         "dest-filename": "langpack-nb-NO@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/nl.xpi",
-        "sha256": "d98360bea6f3dba644232acf196670dab8ef436244d82327a2734fe774ed10eb",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/nl.xpi",
+        "sha256": "586e288007f0551c833c4c54a108e26c5f0af0f562cb3b5ed5a1bba63673adf5",
         "dest": "langpacks/",
         "dest-filename": "langpack-nl@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/nn-NO.xpi",
-        "sha256": "ba18f7ccee9f4cad7c192504cf46108e9f1ae0364d4ab64027ba4ee8f21bf19b",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/nn-NO.xpi",
+        "sha256": "43617ca6a99708679585487d0dc66c19bd7bdd74ebdb080a5fa42caf51e72538",
         "dest": "langpacks/",
         "dest-filename": "langpack-nn-NO@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/pl.xpi",
-        "sha256": "82bc066b34447f0138e242062ec02703a41c52fcd27ee9c34cfb9139175b11b3",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/pa-IN.xpi",
+        "sha256": "62e5574fd4edc025d8952556bb36585650db29e760c728c944ccb94870035248",
+        "dest": "langpacks/",
+        "dest-filename": "langpack-pa-IN@thunderbird.mozilla.org.xpi"
+    },
+    {
+        "type": "file",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/pl.xpi",
+        "sha256": "ab141dcfc2f61c1f077d9d73d86866c704c689c2467bfe9258e81b6410780852",
         "dest": "langpacks/",
         "dest-filename": "langpack-pl@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/pt-BR.xpi",
-        "sha256": "26b733b4ea0007d994fbfff47d807ab6901cfa815388aa8f6c7fd470e87a771a",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/pt-BR.xpi",
+        "sha256": "2d69d88e499b1fb7a6d93570b5fc082118d42d903fe6caf77e837dd9cb67f7ae",
         "dest": "langpacks/",
         "dest-filename": "langpack-pt-BR@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/pt-PT.xpi",
-        "sha256": "efb16bd7e9a38a179d3ed46043ebfde56841ba78b659664b5f8315b9a4b8f834",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/pt-PT.xpi",
+        "sha256": "0500a37c1e3fa7388deb13242a49afff3206f6f1484011a28ea6e20ecb9783ac",
         "dest": "langpacks/",
         "dest-filename": "langpack-pt-PT@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/rm.xpi",
-        "sha256": "cf2b0b016526c7a3a7462806bbde0b36dee21b75a46f92b53d3f52d933e87c2a",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/rm.xpi",
+        "sha256": "e06e465b4d4b4c4e34099f9975f20646a8d25d516be6b1ba7eee5b13a2505d7e",
         "dest": "langpacks/",
         "dest-filename": "langpack-rm@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ro.xpi",
-        "sha256": "f54ffa00147a0cca0d39852d25517b9fe1b2979b307e112d083e18e07926ddfe",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ro.xpi",
+        "sha256": "0030b698cdf744110be165b866ce73dfee6816f9f67699db42068560f9ba487b",
         "dest": "langpacks/",
         "dest-filename": "langpack-ro@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/ru.xpi",
-        "sha256": "027731d6af14e49e3615dc432ca90f2969adfbf4f1414830d9c73d12fdee355d",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/ru.xpi",
+        "sha256": "31c431a79134c407d6e4edc3c60cdf4837a07f5dc14940122dd9566d95067a92",
         "dest": "langpacks/",
         "dest-filename": "langpack-ru@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/si.xpi",
-        "sha256": "7421901c3e6c59a21991f22c88e9032af43fde2f039893f2fc3d8a431f020a93",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/si.xpi",
+        "sha256": "67267e368a56bfb6441ec38d2fcf467c8b99efd9f23ceaf4818de02c510a6585",
         "dest": "langpacks/",
         "dest-filename": "langpack-si@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/sk.xpi",
-        "sha256": "5b5dad1ca6a2f540c460e2da76041f307fb339edfc31d813c05cf023aa244bed",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/sk.xpi",
+        "sha256": "490a7d9fa4b4d70101786d989ef391431948f6693da0c3fbc74ecb172ce44b47",
         "dest": "langpacks/",
         "dest-filename": "langpack-sk@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/sl.xpi",
-        "sha256": "6fe7c0f1ace7e3860b05324f112778d5296902d01caa56cd23a80475ee7fa51f",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/sl.xpi",
+        "sha256": "040da17f3584f036754fd620a93bc123e8e51560b32b480e4819016940ee1edf",
         "dest": "langpacks/",
         "dest-filename": "langpack-sl@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/sq.xpi",
-        "sha256": "5e082b576a7c2c8d8889d7f8b00f3547b6125d953126fdc06a02e9db119dd30d",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/sq.xpi",
+        "sha256": "02f3d740cd6ca8b100ad037586aaccbd029f4f26470c95ee62566b12dc4ea72d",
         "dest": "langpacks/",
         "dest-filename": "langpack-sq@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/sr.xpi",
-        "sha256": "30621d0c41258db623fee7f116cafabc9f9ee4dc9143f7d1cee38fc42da2ebfd",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/sr.xpi",
+        "sha256": "2dbb68b4d130e3cba1fdbce3da16f7a72bcf63babdaa661718d10dd36fbe098e",
         "dest": "langpacks/",
         "dest-filename": "langpack-sr@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/sv-SE.xpi",
-        "sha256": "e4d7052ff94f8c4afd86d4a3f332640d1ee08f54c1044f7ad02cbe2271be5ed2",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/sv-SE.xpi",
+        "sha256": "d2f22730a66bb428475c520a1299e44b2396c989bc2f1994bcf9065e35d05df7",
         "dest": "langpacks/",
         "dest-filename": "langpack-sv-SE@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/tr.xpi",
-        "sha256": "9aac3abe19602d612248a525e1483c805984523eb428929aa7bd4c2163e35e02",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/th.xpi",
+        "sha256": "561457932f3c5928028faf9cf640ae0dc21cfa8447a34c58a9e7ad1980945a06",
+        "dest": "langpacks/",
+        "dest-filename": "langpack-th@thunderbird.mozilla.org.xpi"
+    },
+    {
+        "type": "file",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/tr.xpi",
+        "sha256": "64a4fc4e14edbcee4ffd953ec4664cf8bf482b9f4a36d44e5b9706adb4cdca1c",
         "dest": "langpacks/",
         "dest-filename": "langpack-tr@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/uk.xpi",
-        "sha256": "8caf97578f8655c746bff8d0d0cd353c6d47f5b3346bc0a416f94e94cb7c3aa5",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/uk.xpi",
+        "sha256": "04828abc76092395c0214544851dcca07ad83e94c998e5d34692ba6ac6365c45",
         "dest": "langpacks/",
         "dest-filename": "langpack-uk@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/uz.xpi",
-        "sha256": "dc514cfe5bdf7eaaa6fb759ee0dc08eca5536bb803aacc8f05b4fa5a266ccf68",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/uz.xpi",
+        "sha256": "c94c53c9fb5d2532245bbc268ba52fc3944cf0b25903ad0016d4d6fd290609e8",
         "dest": "langpacks/",
         "dest-filename": "langpack-uz@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/vi.xpi",
-        "sha256": "171d2b79d6f47c298053b27b188a02dd75f4e5dede4d7ef246e0c1685e2cc102",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/vi.xpi",
+        "sha256": "ba8c01f693f724db300abaa83cd976e6fe47503eb29e53d192a04d0684f4d0a7",
         "dest": "langpacks/",
         "dest-filename": "langpack-vi@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/zh-CN.xpi",
-        "sha256": "c9c3758fdc564448c049efb5b4b12818bb0249c8f06760f561b6b447b6bfa9fe",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/zh-CN.xpi",
+        "sha256": "857200a6798458b0dd8e9976fa281ee23322928085779b374ef13d473e7b6539",
         "dest": "langpacks/",
         "dest-filename": "langpack-zh-CN@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "file",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/linux-x86_64/xpi/zh-TW.xpi",
-        "sha256": "d2aef33f392f91502c21878d71f67088c60d69555aff4a4d2a55e009cdf5fac8",
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/linux-x86_64/xpi/zh-TW.xpi",
+        "sha256": "92db3e6e914338ec7da239f5370faf6f645ce4aa91901ca90d66bae64488bbca",
         "dest": "langpacks/",
         "dest-filename": "langpack-zh-TW@thunderbird.mozilla.org.xpi"
     },
     {
         "type": "archive",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/68.12.0/source/thunderbird-68.12.0.source.tar.xz",
-        "sha256": "8cf582d03125df86044626072c0d924d4b7c3e984d9228d62acdf4e9918eec02"
+        "url": "https://archive.mozilla.org/pub/thunderbird/releases/78.3.1/source/thunderbird-78.3.1.source.tar.xz",
+        "sha256": "4ea61f59a819f5a8a4574b0735952e23b4c86387b8da24906129c45e71bf2718"
     }
 ]
