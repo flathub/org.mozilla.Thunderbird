@@ -113,8 +113,8 @@
             "sources": [
         {
                     "type": "archive",
-                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.8.26.tar.gz",
-                    "sha256": "87da93642ba45fdbec07462c9ffabecbdda02407719fa21402f20fa35910425a"
+                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
+                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2"
         }
             ]
         },
@@ -147,14 +147,15 @@
             "config-opts": [
                 "-Dtests=false",
                 "-Dintrospection=disabled",
+                "-Dman=false",
                 "-Dgtk_doc=false",
                 "-Ddocbook_docs=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.8.tar.xz",
-                    "sha256": "69209e0b663776a00c7b6c0e560302a8dbf66b2551d55616304f240bba66e18c"
+                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz",
+                    "sha256": "66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761"
                 }
             ]
         },
