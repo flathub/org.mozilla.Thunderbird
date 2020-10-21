@@ -1,0 +1,30 @@
+From 33b675d8e5e6be6f53d605fb9c9d71e9b41e4767 Mon Sep 17 00:00:00 2001
+From: Thomas Deutschmann <whissi@gentoo.org>
+Date: Sat, 10 Oct 2020 16:07:49 +0200
+Subject: [PATCH 36/38] bmo#1643201: Cherry-pick some servo changes to
+ derive_common
+
+Link: https://bugzilla.mozilla.org/show_bug.cgi?id=1663715#c7
+Signed-off-by: Thomas Deutschmann <whissi@gentoo.org>
+---
+ servo/components/derive_common/cg.rs | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/servo/components/derive_common/cg.rs b/servo/components/derive_common/cg.rs
+index 8abfd87149..f6bfeb1177 100644
+--- a/servo/components/derive_common/cg.rs
++++ b/servo/components/derive_common/cg.rs
+@@ -218,6 +218,10 @@ where
+             elem: Box::new(map_type_params(&inner.elem, params, self_type, f)),
+             ..inner.clone()
+         }),
++        Type::Group(ref inner) => Type::from(TypeGroup {
++            elem: Box::new(map_type_params(&inner.elem, params, f)),
++            ..inner.clone()
++        }),
+         ref ty => panic!("type {:?} cannot be mapped yet", ty),
+     }
+ }
+-- 
+2.28.0
+

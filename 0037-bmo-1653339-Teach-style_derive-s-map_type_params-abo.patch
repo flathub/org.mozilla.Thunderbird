@@ -1,0 +1,27 @@
+From 8230edca37cddba17d92356e948c62d1a981cc88 Mon Sep 17 00:00:00 2001
+From: Thomas Deutschmann <whissi@gentoo.org>
+Date: Tue, 20 Oct 2020 15:19:21 +0200
+Subject: [PATCH 37/38] bmo#1653339: Teach style_derive's map_type_params about
+ mapping self correctly
+
+Link: https://bugzilla.mozilla.org/show_bug.cgi?id=1643201#c30
+---
+ servo/components/derive_common/cg.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/servo/components/derive_common/cg.rs b/servo/components/derive_common/cg.rs
+index f6bfeb1177..5e994230cf 100644
+--- a/servo/components/derive_common/cg.rs
++++ b/servo/components/derive_common/cg.rs
+@@ -219,7 +219,7 @@ where
+             ..inner.clone()
+         }),
+         Type::Group(ref inner) => Type::from(TypeGroup {
+-            elem: Box::new(map_type_params(&inner.elem, params, f)),
++            elem: Box::new(map_type_params(&inner.elem, params, self_type, f)),
+             ..inner.clone()
+         }),
+         ref ty => panic!("type {:?} cannot be mapped yet", ty),
+-- 
+2.28.0
+
