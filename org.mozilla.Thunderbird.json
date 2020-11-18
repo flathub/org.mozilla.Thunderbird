@@ -237,16 +237,6 @@
                     "path": "default-preferences.js"
                 },
                 {
-                    "type": "patch",
-                    "path": "0036-bmo-1643201-Cherry-pick-some-servo-changes-to-derive.patch"
-                },                {
-                    "type": "patch",
-                    "path": "0037-bmo-1653339-Teach-style_derive-s-map_type_params-abo.patch"
-                },                {
-                    "type": "patch",
-                    "path": "0038-bmo-1663715-Update-syn-and-proc-macro2-so-that-Firef.patch"
-                },
-                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
