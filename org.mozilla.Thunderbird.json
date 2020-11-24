@@ -22,9 +22,7 @@
         "--socket=pulseaudio",
         /* Make thunderbird configuration persistent */
         "--persist=.thunderbird",
-        /* Access to Public directory (read-only, to upload attachments) */
-        "--filesystem=xdg-public-share:ro",
-        /* Access to Downloads (to download attachments) */
+        /* Access to Downloads (default path for downloading files) */
         "--filesystem=xdg-download:rw",
         /* Needed for accessibility */
         "--talk-name=org.a11y.*",
