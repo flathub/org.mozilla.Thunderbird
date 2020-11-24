@@ -20,7 +20,7 @@ then select the old profile and tick "*Use the selected profile without asking o
 #### Language support
 ([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in `org.mozilla.Thunderbird.Locale` extension. One locale that matches host OS locale will be installed and selected by default. For instructions about how to enable more locales in flatpak take a look at https://flatpak.readthedocs.io/en/latest/flatpak-command-reference.html#flatpak-config
 
-([#90](https://github.com/flathub/org.mozilla.Thunderbird/issues/90)) Dictionaries availabiity is similar as for locales. They also could be downloaded manually from:<br>
+([#90](https://github.com/flathub/org.mozilla.Thunderbird/issues/90)) Dictionaries availability is similar as for locales. They also could be downloaded manually from:<br>
 https://addons.thunderbird.net/language-tools/<br>
 and installed through:<br>
 [Menu Bar](https://support.mozilla.org/kb/display-thunderbird-menus-and-toolbar) > `Tools` > `Add-ons` > `Extensions` > `Install Add-on From File`<br>
@@ -39,3 +39,6 @@ You may need to restart app in order to make changes effective.
 
 #### Smartcard
 ([#51](https://github.com/flathub/org.mozilla.Thunderbird/issues/51)) For Smartcard support you need at least Flatpak 1.3.2.
+
+#### Other flatpak issues unresolved yet by upstream
+([#123](https://github.com/flathub/org.mozilla.Thunderbird/issues/123)) Opening Profile Directory doesn't work: https://bugzilla.mozilla.org/show_bug.cgi?id=1625111
