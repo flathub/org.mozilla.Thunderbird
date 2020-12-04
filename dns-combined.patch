@@ -1,0 +1,45 @@
+# HG changeset patch
+# User Kai Engert <kaie@kuix.de>
+# Date 1607040223 -3600
+#      Fri Dec 04 01:03:43 2020 +0100
+# Node ID 7080d945b45e8ced390bd5c1bedefb6fbf737bdc
+# Parent  6fd687ae9b1c2d9f2c42d34d4ae54417129d502c
+Bug 1634053 - Fix DNS.jsm lookups on Linux systems that don't have development libraries installed. r=rjl
+
+Differential Revision: https://phabricator.services.mozilla.com/D98681
+Differential Revision: https://phabricator.services.mozilla.com/D98685
+
+diff --git a/comm/mail/base/modules/DNS.jsm b/comm/mail/base/modules/DNS.jsm
+--- a/comm/mail/base/modules/DNS.jsm
++++ b/comm/mail/base/modules/DNS.jsm
+@@ -38,20 +38,24 @@ load_libresolv.prototype = {
+   _open() {
+     function findLibrary() {
+       let lastException = null;
+-      let libnames = [
+-        ctypes.libraryName("resolv.9"),
+-        ctypes.libraryName("resolv"),
++      let candidates = [
++        { name: "resolv.9", suffix: "" },
++        { name: "resolv", suffix: ".2" },
++        { name: "resolv", suffix: "" },
+       ];
+-      for (let libname of libnames) {
++      let tried = [];
++      for (let candidate of candidates) {
+         try {
+-          return ctypes.open(libname);
++          let name = ctypes.libraryName(candidate.name) + candidate.suffix;
++          tried.push(name);
++          return ctypes.open(name);
+         } catch (ex) {
+           lastException = ex;
+         }
+       }
+       throw new Error(
+         "Could not find libresolv in any of " +
+-          libnames +
++          tried +
+           " Exception: " +
+           lastException +
+           "\n"

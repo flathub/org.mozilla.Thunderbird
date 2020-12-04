@@ -194,6 +194,10 @@
                     "path": "default-preferences.js"
                 },
                 {
+                    "type": "patch",
+                    "path": "dns-combined.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
