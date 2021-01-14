@@ -82,6 +82,16 @@
             ]
         },
         {
+            "name": "opensc",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/OpenSC/OpenSC/releases/download/0.21.0/opensc-0.21.0.tar.gz",
+                    "sha256": "2bfbbb1dcb4b8d8d75685a3e95c30798fb6411d4efab3690fd89d2cb25f3325e"
+                }
+            ]
+        },
+        {
             "name": "autoconf-2.13",
             "config-opts": ["--program-suffix=2.13"],
             "cleanup": [ "*" ],
