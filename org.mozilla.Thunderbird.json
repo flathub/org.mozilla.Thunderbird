@@ -5,7 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.node12",
+        "org.freedesktop.Sdk.Extension.node14",
         "org.freedesktop.Sdk.Extension.llvm11"
     ],
     "command": "thunderbird",
