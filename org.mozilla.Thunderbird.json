@@ -148,14 +148,14 @@
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node12/bin",
-                "append-ld-library-path": "/usr/lib/sdk/node12/lib",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node14/bin",
+                "append-ld-library-path": "/usr/lib/sdk/node14/lib",
                 "prepend-path": "/usr/lib/sdk/llvm11/bin",
                 "prepend-ld-library-path": "/usr/lib/sdk/llvm11/lib",
                 "env":{
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
-                    "npm_config_nodedir": "/usr/lib/sdk/node12"
+                    "npm_config_nodedir": "/usr/lib/sdk/node14"
                 }
             },
             "build-commands": [
