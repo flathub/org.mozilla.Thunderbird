@@ -56,6 +56,8 @@
     "modules": [
         "shared-modules/gtk2/gtk2.json",
         "shared-modules/dbus-glib/dbus-glib-0.110.json",
+        "shared-modules/libcanberra/libcanberra.json",
+        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "pcsc-lite",
             "config-opts": [
@@ -116,6 +118,16 @@
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz",
                     "sha256": "66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761"
+                }
+            ]
+        },
+        {
+            "name": "sound-theme-freedesktop",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://salsa.debian.org/gnome-team/sound-theme-freedesktop.git",
+                    "tag": "upstream/0.8"
                 }
             ]
         },
