@@ -1,11 +1,10 @@
 {
     "app-id": "org.mozilla.Thunderbird",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08beta",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.node14",
         "org.freedesktop.Sdk.Extension.llvm12"
     ],
     "command": "thunderbird",
