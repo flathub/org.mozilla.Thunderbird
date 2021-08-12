@@ -54,7 +54,6 @@
         "*.la", "*.a"
     ],
     "modules": [
-        "shared-modules/gtk2/gtk2.json",
         "shared-modules/dbus-glib/dbus-glib-0.110.json",
         "shared-modules/libcanberra/libcanberra.json",
         "shared-modules/intltool/intltool-0.51.json",
