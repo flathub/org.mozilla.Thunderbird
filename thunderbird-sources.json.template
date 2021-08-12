@@ -1,8 +1,0 @@
-[
-    $LANGPACKS
-    {
-        "type": "archive",
-        "url": "https://archive.mozilla.org/pub/thunderbird/releases/$VERSION/source/thunderbird-$VERSION.source.tar.xz",
-        "sha256": "$CHECKSUM"
-    }
-]

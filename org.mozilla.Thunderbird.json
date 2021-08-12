@@ -1,11 +1,12 @@
 {
     "app-id": "org.mozilla.Thunderbird",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.node12"
+        "org.freedesktop.Sdk.Extension.node14",
+        "org.freedesktop.Sdk.Extension.llvm12"
     ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
@@ -22,12 +23,12 @@
         "--socket=pulseaudio",
         /* Make thunderbird configuration persistent */
         "--persist=.thunderbird",
-        /* Access to Public directory (read-only, to upload attachments) */
-        "--filesystem=xdg-public-share:ro",
-        /* Access to Downloads (to download attachments) */
+        /* Access to Downloads (default path for downloading files) */
         "--filesystem=xdg-download:rw",
         /* Needed for accessibility */
         "--talk-name=org.a11y.*",
+        /* Needed for detecting running instance on wayland */
+        "--own-name=org.mozilla.thunderbird.*",
         /* Make notifications work */
         "--talk-name=org.freedesktop.Notifications",
         /* Smartcard access - Requires flatpak >= 1.3.2 */
@@ -36,8 +37,7 @@
         "--require-version=0.10.3",
         /* GPG support */
         "--filesystem=~/.gnupg",
-        "--filesystem=xdg-run/gnupg:ro",
-        "--talk-name=org.gnome.keyring.SystemPrompter"
+        "--filesystem=xdg-run/gnupg:ro"
     ],
     "cleanup": [
         "/include",
@@ -56,46 +56,8 @@
     "modules": [
         "shared-modules/gtk2/gtk2.json",
         "shared-modules/dbus-glib/dbus-glib-0.110.json",
-            {
-            "name": "gcr",
-            "config-opts": [
-                "--disable-static",
-                "--disable-update-mime",
-                "--disable-schemas-compile",
-                "--enable-valgrind=no"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gcr/3.34/gcr-3.34.0.tar.xz",
-                    "sha256": "29df50974a90987af694c0fb8926a6b366e68cacd8abd813817cfe1eb5d54524"
-                }
-            ]
-        },
-            {
-            "name": "pinentry",
-            "config-opts": [
-                "--enable-pinentry-gnome3",
-                "--disable-ncurses",
-                "--disable-fallback-curses",
-                "--disable-pinentry-curses",
-                "--disable-pinentry-emacs",
-                "--disable-pinentry-gtk2",
-                "--disable-pinentry-qt5",
-                "--disable-pinentry-tty",
-                "--disable-pinentry-tqt",
-                "--disable-pinentry-fltk",
-                "--without-libcap",
-                "--enable-libsecret=no"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.1.0.tar.bz2",
-                    "sha256": "68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570"
-                }
-            ]
-        },
+        "shared-modules/libcanberra/libcanberra.json",
+        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "pcsc-lite",
             "config-opts": [
@@ -111,11 +73,11 @@
                 "rmdir /app/sbin || true"
             ],
             "sources": [
-        {
+                {
                     "type": "archive",
-                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.8.26.tar.gz",
-                    "sha256": "87da93642ba45fdbec07462c9ffabecbdda02407719fa21402f20fa35910425a"
-        }
+                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
+                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2"
+                }
             ]
         },
         {
@@ -125,7 +87,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz",
+                    "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.13.tar.gz",
                     "sha256": "f0611136bee505811e9ca11ca7ac188ef5323a8e2ef19cffd3edb3cf08fd791e"
                 }
             ]
@@ -136,7 +98,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz",
+                    "url": "https://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz",
                     "sha256": "3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f"
                 }
             ]
@@ -147,14 +109,25 @@
             "config-opts": [
                 "-Dtests=false",
                 "-Dintrospection=disabled",
+                "-Dman=false",
                 "-Dgtk_doc=false",
                 "-Ddocbook_docs=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.8.tar.xz",
-                    "sha256": "69209e0b663776a00c7b6c0e560302a8dbf66b2551d55616304f240bba66e18c"
+                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz",
+                    "sha256": "66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761"
+                }
+            ]
+        },
+        {
+            "name": "sound-theme-freedesktop",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://salsa.debian.org/gnome-team/sound-theme-freedesktop.git",
+                    "tag": "upstream/0.8"
                 }
             ]
         },
@@ -177,22 +150,24 @@
                 {
                     "type": "git",
                     "url": "https://github.com/eqrion/cbindgen.git",
-                    "tag": "v0.14.3",
-                    "commit": "cc2876f709808a52d132a5f84e53ca1964eb92db"
+                    "tag": "v0.19.0",
+                    "commit": "d9e490ce8b836194595bd30611253a7028059da2"
                 },
-                "cbindgen-dependencies.json"
+                "cbindgen-sources.json"
             ]
         },
         {
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node12/bin",
-                "append-ld-library-path": "/usr/lib/sdk/node12/lib",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node14/bin",
+                "append-ld-library-path": "/usr/lib/sdk/node14/lib",
+                "prepend-path": "/usr/lib/sdk/llvm12/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib",
                 "env":{
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
-                    "npm_config_nodedir": "/usr/lib/sdk/node12"
+                    "npm_config_nodedir": "/usr/lib/sdk/node14"
                 }
             },
             "build-commands": [
