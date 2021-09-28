@@ -8,19 +8,14 @@ export MOZ_NOSPAM=1
 mk_add_options MOZ_CO_PROJECT=mail
 ac_add_options --enable-application=comm/mail
 
-# enable calendar
-ac_add_options --enable-calendar
-
-# Use gtk3
-ac_add_options --enable-default-toolkit=cairo-gtk3
-
 # use system libs if possible
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
 ac_add_options --with-system-libvpx
 # freedesktop runtime is missing bzip2.pc file
 #ac_add_options --with-system-bz2
-ac_add_options --with-system-icu
+# requires icu-i18n >= 69.1
+#ac_add_options --with-system-icu
 # requires nss >=3.53.1
 #ac_add_options --with-system-nss
 #ac_add_options --with-system-nspr
