@@ -6,6 +6,7 @@
   <name>Thunderbird</name>
   <!-- From the GNOME Software utility -->
   <summary>Email, RSS and newsgroup client with integrated spam filter</summary>
+  <summary xml:lang="hu">E-mail-, RSS- és hírcsoport-ügyfél integrált levélszemétszűrővel</summary>
   <description>
     <!-- From the GNOME Software utility -->
     <p>
@@ -19,8 +20,22 @@
     <!-- From https://en.wikipedia.org/wiki/Mozilla_Thunderbird -->
     <p>
       Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, 
-      and chat client developed by the Mozilla Foundation.
+      and chat client developed by the Thunderbird Project.
     </p>
+
+    <p xml:lang="hu">
+      A Thunderbird egy teljes körű e-mail-, RSS- és hírcsoport-ügyfél, amely biztonságosabbá, 
+      gyorsabbá és egyszerűbbé teszi az e-mailezést, mint valaha. Támogatja a különböző e-mail 
+      fiókokat (POP, IMAP, Gmail), rendelkezik egy egyszerű e-mail fiók beállítási varázslóval, 
+      egy kattintásos címjegyzékkel, füles felülettel, integrált tanulási levélszemétszűrővel, 
+      fejlett keresési és indexelési lehetőségekkel, valamint egyszerű címkézési rendszerezést 
+      kínál. és virtuális mappák. Páratlan bővíthetőséget is kínál.
+    </p>
+    <p xml:lang="hu">
+      A Mozilla Thunderbird egy ingyenes és nyílt forráskódú, többplatformos e-mail-, hír-, 
+      RSS- és csevegés-ügyfél, amelyet a Thunderbird Project fejlesztett ki.
+    </p>
+    
   </description>
   <!-- https://specifications.freedesktop.org/menu-spec/latest/apa.html -->
   <!-- https://specifications.freedesktop.org/menu-spec/latest/apas02.html -->
