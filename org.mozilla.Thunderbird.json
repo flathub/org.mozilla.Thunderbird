@@ -38,6 +38,8 @@
         /* GPG support */
         "--filesystem=~/.gnupg",
         "--filesystem=xdg-run/gnupg:ro"
+        /* Needed for perfers-color-scheme */
+        "--system-talk-name=org.freedesktop.Accounts"
     ],
     "cleanup": [
         "/include",
