@@ -37,7 +37,7 @@
         "--require-version=0.10.3",
         /* GPG support */
         "--filesystem=~/.gnupg",
-        "--filesystem=xdg-run/gnupg:ro"
+        "--filesystem=xdg-run/gnupg:ro",
         /* Needed for perfers-color-scheme */
         "--system-talk-name=org.freedesktop.Accounts"
     ],
