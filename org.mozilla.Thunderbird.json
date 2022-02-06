@@ -210,6 +210,10 @@
                     "path": "default-preferences.js"
                 },
                 {
+                    "type": "patch",
+                    "path": "wayland120fix.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
