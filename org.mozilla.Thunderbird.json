@@ -37,7 +37,10 @@
         "--require-version=0.10.3",
         /* GPG support */
         "--filesystem=~/.gnupg",
-        "--filesystem=xdg-run/gnupg:ro"
+        "--filesystem=xdg-run/gnupg:ro",
+        /* Printing support */
+        "--env=GTK_PATH=/app/lib/gtkmodules",
+        "--socket=cups"
     ],
     "cleanup": [
         "/include",
@@ -117,6 +120,37 @@
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz",
                     "sha256": "66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761"
+                }
+            ]
+        },
+        {
+            "name": "gtk-cups-backend",
+            "buildsystem": "meson",
+            "make-args": [
+                "modules/printbackends/libprintbackend-cups.so"
+            ],
+            "no-make-install": true,
+            "post-install": [
+                "install -Dm 755 modules/printbackends/libprintbackend-cups.so -t /app/lib/gtkmodules/3.0.0/printbackends/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/core/41/41.5/sources/gtk%2B-3.24.33.tar.xz",
+                    "sha256": "588b06522e25d1579e989b6f9d8a1bdbf2fe13cde01a04e904ff346a225e7801"
+                }
+            ]
+        },
+        {
+            "name": "gtk-settings",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm 644 gtk-settings.ini /app/etc/xdg/gtk-3.0/settings.ini"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "gtk-settings.ini"
                 }
             ]
         },
