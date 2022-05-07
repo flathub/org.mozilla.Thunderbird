@@ -242,6 +242,10 @@
                     "path": "default-preferences.js"
                 },
                 {
+                    "type": "patch",
+                    "path": "portal-printing-fix.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
