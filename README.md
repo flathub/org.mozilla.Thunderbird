@@ -7,15 +7,15 @@ org.mozilla.Thunderbird (aka net.thunderbird.Thunderbird)
 Non flatpak-packaging issues should be reported upstream at<br>
 https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 
-#### Old profile
-To use an old, non-[Flatpak](https://flatpak.org/) [Thunderbird profile](https://support.mozilla.org/kb/profiles-where-thunderbird-stores-user-data) copy it from<br>
+#### Migration from pre-exisiting non-flatpak installations
+In order to migrate from pre-exisiting non-flatpak installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
-to<br>
+folder into<br>
 `~/.var/app/org.mozilla.Thunderbird/.thunderbird`
 
-In case Thunderbird opens a new profile instead of the old one, run:<br>
+In case Thunderbird opens a new profile instead of the existing one, run:<br>
 `flatpak run org.mozilla.Thunderbird -P`<br>
-then select the old profile and tick "*Use the selected profile without asking on startup*" box.
+then select the right profile and tick "*Use the selected profile without asking on startup*" box.
 
 #### Language support
 ([#3](https://github.com/flathub/org.mozilla.Thunderbird/issues/3)) All supported locales are available in `org.mozilla.Thunderbird.Locale` extension. One locale that matches host OS locale will be installed and selected by default. For instructions about how to enable more locales in flatpak take a look at https://flatpak.readthedocs.io/en/latest/flatpak-command-reference.html#flatpak-config
