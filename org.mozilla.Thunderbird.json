@@ -165,6 +165,36 @@
             ]
         },
         {
+            "name": "krb5",
+            "subdir": "src",
+            "config-opts": [
+                    "--localstatedir=/var/lib",
+                    "--sbindir=${FLATPAK_DEST}/bin",
+                    "--disable-rpath",
+                    "--disable-static"
+            ],
+            "post-install": [
+                    "install -Dm644 ../krb5.conf -t ${FLATPAK_DEST}/etc/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://kerberos.org/dist/krb5/1.19/krb5-1.19.3.tar.gz",
+                    "sha256": "56d04863cfddc9d9eb7af17556e043e3537d41c6e545610778676cf551b9dcd0"
+                },
+                {
+                    "type": "file",
+                    "path": "krb5.conf"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/et",
+                "/share/examples",
+                "/share/man"
+            ]
+        },
+        {
             "name": "cbindgen",
             "buildsystem": "simple",
             "build-commands": [
