@@ -38,6 +38,8 @@
         /* GPG support */
         "--filesystem=~/.gnupg",
         "--filesystem=xdg-run/gnupg:ro",
+        /* Kerberos support */
+        "--filesystem=/run/.heim_org.h5l.kcm-socket",
         /* Printing support */
         "--env=GTK_PATH=/app/lib/gtkmodules",
         "--socket=cups"
