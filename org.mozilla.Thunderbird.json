@@ -26,7 +26,7 @@
         /* Access to Downloads (default path for downloading files) */
         "--filesystem=xdg-download:rw",
         /* Needed for accessibility */
-        "--talk-name=org.a11y.*",
+        "--talk-name=org.a11y.Bus",
         /* Needed for detecting running instance on wayland */
         "--own-name=org.mozilla.thunderbird.*",
         /* Make notifications work */
