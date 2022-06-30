@@ -1,12 +1,12 @@
 {
     "app-id": "org.mozilla.Thunderbird",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
         "org.freedesktop.Sdk.Extension.node14",
-        "org.freedesktop.Sdk.Extension.llvm12"
+        "org.freedesktop.Sdk.Extension.llvm13"
     ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
@@ -26,7 +26,7 @@
         /* Access to Downloads (default path for downloading files) */
         "--filesystem=xdg-download:rw",
         /* Needed for accessibility */
-        "--talk-name=org.a11y.*",
+        "--talk-name=org.a11y.Bus",
         /* Needed for detecting running instance on wayland */
         "--own-name=org.mozilla.thunderbird.*",
         /* Make notifications work */
@@ -37,7 +37,12 @@
         "--require-version=0.10.3",
         /* GPG support */
         "--filesystem=~/.gnupg",
-        "--filesystem=xdg-run/gnupg:ro"
+        "--filesystem=xdg-run/gnupg:ro",
+        /* Kerberos support */
+        "--filesystem=/run/.heim_org.h5l.kcm-socket",
+        /* Printing support */
+        "--env=GTK_PATH=/app/lib/gtkmodules",
+        "--socket=cups"
     ],
     "cleanup": [
         "/include",
@@ -115,8 +120,39 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz",
-                    "sha256": "66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761"
+                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.12.tar.xz",
+                    "sha256": "744b2b37508135f8261b755a9debe6e09add421adc75bde930f6e198b70ab46e"
+                }
+            ]
+        },
+        {
+            "name": "gtk-cups-backend",
+            "buildsystem": "meson",
+            "make-args": [
+                "modules/printbackends/libprintbackend-cups.so"
+            ],
+            "no-make-install": true,
+            "post-install": [
+                "install -Dm 755 modules/printbackends/libprintbackend-cups.so -t /app/lib/gtkmodules/3.0.0/printbackends/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/core/41/41.5/sources/gtk%2B-3.24.33.tar.xz",
+                    "sha256": "588b06522e25d1579e989b6f9d8a1bdbf2fe13cde01a04e904ff346a225e7801"
+                }
+            ]
+        },
+        {
+            "name": "gtk-settings",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm 644 gtk-settings.ini /app/etc/xdg/gtk-3.0/settings.ini"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "gtk-settings.ini"
                 }
             ]
         },
@@ -128,6 +164,36 @@
                     "url": "https://salsa.debian.org/gnome-team/sound-theme-freedesktop.git",
                     "tag": "upstream/0.8"
                 }
+            ]
+        },
+        {
+            "name": "krb5",
+            "subdir": "src",
+            "config-opts": [
+                    "--localstatedir=/var/lib",
+                    "--sbindir=${FLATPAK_DEST}/bin",
+                    "--disable-rpath",
+                    "--disable-static"
+            ],
+            "post-install": [
+                    "install -Dm644 ../krb5.conf -t ${FLATPAK_DEST}/etc/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://kerberos.org/dist/krb5/1.19/krb5-1.19.3.tar.gz",
+                    "sha256": "56d04863cfddc9d9eb7af17556e043e3537d41c6e545610778676cf551b9dcd0"
+                },
+                {
+                    "type": "file",
+                    "path": "krb5.conf"
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/share/et",
+                "/share/examples",
+                "/share/man"
             ]
         },
         {
@@ -159,10 +225,8 @@
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node14/bin",
-                "append-ld-library-path": "/usr/lib/sdk/node14/lib",
-                "prepend-path": "/usr/lib/sdk/llvm12/bin",
-                "prepend-ld-library-path": "/usr/lib/sdk/llvm12/lib",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node14/bin:/usr/lib/sdk/llvm13/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm13/lib",
                 "env":{
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
@@ -170,7 +234,7 @@
                 }
             },
             "build-commands": [
-                "export MOZ_BUILD_DATE=$(head -1 ./sourcestamp.txt); ./mach create-mach-environment; ./mach configure; ./mach build -v; ./mach install",
+                "export MOZ_BUILD_DATE=$(head -1 ./sourcestamp.txt); ./mach create-mach-environment; ./mach configure; ./mach build -v -j ${FLATPAK_BUILDER_N_JOBS}; ./mach install",
                 "rm -f /app/bin/thunderbird",
                 "install -Dm755 thunderbird-wrapper /app/bin/thunderbird",
                 "install -Dm644 policies.json /app/lib/thunderbird/distribution/policies.json",
@@ -208,6 +272,10 @@
                 {
                     "type": "file",
                     "path": "default-preferences.js"
+                },
+                {
+                    "type": "patch",
+                    "path": "portal-printing-fix.patch"
                 },
                 {
                     "type": "script",
