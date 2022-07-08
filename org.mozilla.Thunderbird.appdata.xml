@@ -61,7 +61,7 @@
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
  
   <releases>
-    <release version="102.0" date="2022-06-28" />
+    <release version="102.0.1" date="2022-07-05" />
   </releases>
  
   <project_group>Mozilla</project_group>
