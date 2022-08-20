@@ -42,22 +42,24 @@
   <categories>
     <category>Calendar</category>
     <category>Chat</category>
-    <category>Communication</category>
     <category>ContactManagement</category>
     <category>Email</category>
     <category>Feed</category>
     <category>InstantMessaging</category>
     <category>IRCClient</category>
+    <category>Network</category>
     <category>News</category>
     <category>Office</category>
-    <category>Productivity</category>
   </categories>
   <url type="homepage">https://www.thunderbird.net/</url>
   <url type="bugtracker">https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird</url>
   <url type="faq">https://support.mozilla.org/kb/thunderbird-faq</url>
-  <url type="help">https://support.mozilla.org/questions/thunderbird</url>
-  <url type="donation">https://donate.mozilla.org/thunderbird/</url>
-  <url type="translate">https://developer.mozilla.org/docs/Mozilla/Projects/Thunderbird/Thunderbird_Localization</url>
+  <url type="help">https://support.mozilla.org/products/thunderbird</url>
+  <url type="donation">https://give.thunderbird.net/</url>
+  <url type="translate">https://pontoon.mozilla.org/projects/thunderbirdnet/</url>
+  <url type="contact">https://www.thunderbird.net/contact/</url>
+  <url type="vcs-browser">https://hg.mozilla.org/comm-central/</url>
+  <url type="contribute">https://www.thunderbird.net/get-involved/</url>
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
  
   <releases>
@@ -76,7 +78,12 @@
     https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
   --> 
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/mozilla-thunderbird/a.png</screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_light.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_dark.png</image>
+    </screenshot>
   </screenshots>
 
   <suggests>
