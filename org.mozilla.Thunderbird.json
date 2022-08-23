@@ -215,8 +215,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/eqrion/cbindgen.git",
-                    "tag": "v0.19.0",
-                    "commit": "d9e490ce8b836194595bd30611253a7028059da2"
+                    "tag": "v0.23.0",
+                    "commit": "798cfab52bced65a749443faa16990ec3a8e0cfe"
                 },
                 "cbindgen-sources.json"
             ]
@@ -272,10 +272,6 @@
                 {
                     "type": "file",
                     "path": "default-preferences.js"
-                },
-                {
-                    "type": "patch",
-                    "path": "portal-printing-fix.patch"
                 },
                 {
                     "type": "script",
