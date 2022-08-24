@@ -2,3 +2,7 @@
 .vscode/
 app/
 repo/
+
+build/
+
+.flatpak/
