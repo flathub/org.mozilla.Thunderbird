@@ -1,0 +1,86 @@
+{
+    "app-id": "eu.betterbird.Betterbird",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "21.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "/app/bin/betterbird",
+    "rename-icon": "betterbird",
+    "finish-args": [
+        /* X11 + XShm access */
+        "--share=ipc", "--socket=x11",
+        /* Wayland access */
+        "--socket=wayland",
+        /* OpenGL access */
+        "--device=dri",
+        /* Needs to talk to the network: */
+        "--share=network",
+        /* Play sounds */
+        "--socket=pulseaudio",
+        /* Make thunderbird configuration persistent */
+        "--persist=.thunderbird",
+        /* Access to Downloads (default path for downloading files) */
+        "--filesystem=xdg-download:rw",
+        /* Needed for accessibility */
+        "--talk-name=org.a11y.Bus",
+        /* Needed for detecting running instance on wayland */
+        "--own-name=eu.betterbird.Betterbird.*",
+        /* Make notifications work */
+        "--talk-name=org.freedesktop.Notifications",
+        /* Smartcard access - Requires flatpak >= 1.3.2 */
+        "--socket=pcsc",
+        /* Older versions will fail with above permission */
+        "--require-version=0.10.3",
+        /* GPG support */
+        "--filesystem=~/.gnupg",
+        "--filesystem=xdg-run/gnupg:ro",
+        /* Kerberos support */
+        "--filesystem=/run/.heim_org.h5l.kcm-socket",
+        /* Printing support */
+        "--env=GTK_PATH=/app/lib/gtkmodules",
+        "--socket=cups"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/girepository-1.0",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/share/gtk-doc",
+        "/share/doc",
+        "/share/info",
+        "/share/gir-1.0",
+        "/share/man",
+        "/man",
+        "*.la", "*.a"
+    ],
+    "modules": [
+        "shared-modules/dbus-glib/dbus-glib-0.110.json",
+        {
+            "name": "betterbird",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -d /app/lib/betterbird",
+                "cp -r * /app/lib/betterbird/",
+                "ln -s /app/lib/betterbird/betterbird /app/bin/betterbird",
+                "for i in 16 22 24 32 48 64 128 256;do install -Dm644 chrome/icons/default/default${i}.png /app/share/icons/hicolor/${i}x${i}/apps/betterbird.png;done",
+                "install -Dm644 eu.betterbird.Betterbird.desktop /app/share/applications/eu.betterbird.Betterbird.desktop",
+                "install -Dm644 eu.betterbird.Betterbird.appdata.xml /app/share/metainfo/eu.betterbird.Betterbird.appdata.xml"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.betterbird.eu/downloads/LinuxArchive/betterbird-102.2.0-bb14.en-US.linux-x86_64.tar.bz2",
+                    "sha256": "378cb841a93923c874057755a7e4ca6b03c9a919d89736c9bd683a3ac47bdb00"
+                },
+                {
+                    "type": "file",
+                    "path": "eu.betterbird.Betterbird.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "eu.betterbird.Betterbird.appdata.xml"
+                }   
+            ]
+        }
+    ]
+}

@@ -1,39 +1,15 @@
 <!-- https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html -->
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>org.mozilla.Thunderbird</id>
+  <id>eu.betterbird.Betterbird</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <name>Thunderbird</name>
+  <name>Betterbird</name>
   <!-- From the GNOME Software utility -->
   <summary>Email, RSS and newsgroup client with integrated spam filter</summary>
-  <summary xml:lang="hu">E-mail-, RSS- és hírcsoport-ügyfél integrált levélszemétszűrővel</summary>
   <description>
     <!-- From the GNOME Software utility -->
     <p>
-      Thunderbird is a full-featured email, RSS and newsgroup client that makes emailing safer, 
-      faster and easier than ever before. It supports different mail accounts (POP, IMAP, Gmail), 
-      has a simple mail account setup wizard, one-click address book, tabbed interface, an 
-      integrated learning spam filter, advanced search and indexing capabilities, and offers
-      easy organization of mails with tagging and virtual folders. It also features unrivaled 
-      extensibility.
-    </p>
-    <!-- From https://en.wikipedia.org/wiki/Mozilla_Thunderbird -->
-    <p>
-      Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, 
-      and chat client developed by the Thunderbird Project.
-    </p>
-
-    <p xml:lang="hu">
-      A Thunderbird egy teljes körű e-mail-, RSS- és hírcsoport-ügyfél, amely biztonságosabbá, 
-      gyorsabbá és egyszerűbbé teszi az e-mailezést, mint valaha. Támogatja a különböző e-mail 
-      fiókokat (POP, IMAP, Gmail), rendelkezik egy egyszerű e-mail fiók beállítási varázslóval, 
-      egy kattintásos címjegyzékkel, füles felülettel, integrált tanulási levélszemétszűrővel, 
-      fejlett keresési és indexelési lehetőségekkel, valamint egyszerű címkézési rendszerezést 
-      kínál. és virtuális mappák. Páratlan bővíthetőséget is kínál.
-    </p>
-    <p xml:lang="hu">
-      A Mozilla Thunderbird egy ingyenes és nyílt forráskódú, többplatformos e-mail-, hír-, 
-      RSS- és csevegés-ügyfél, amelyet a Thunderbird Project fejlesztett ki.
+      Betterbird is a soft-fork of Mozilla Thunderbird. Simply better.
     </p>
     
   </description>
@@ -51,31 +27,24 @@
     <category>News</category>
     <category>Office</category>
   </categories>
-  <url type="homepage">https://www.thunderbird.net/</url>
-  <url type="bugtracker">https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird</url>
-  <url type="faq">https://support.mozilla.org/kb/thunderbird-faq</url>
-  <url type="help">https://support.mozilla.org/products/thunderbird</url>
-  <url type="donation">https://give.thunderbird.net/</url>
-  <url type="translate">https://pontoon.mozilla.org/projects/thunderbirdnet/</url>
-  <url type="contact">https://www.thunderbird.net/contact/</url>
-  <url type="vcs-browser">https://hg.mozilla.org/comm-central/</url>
-  <url type="contribute">https://www.thunderbird.net/get-involved/</url>
-  <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
+  <url type="homepage">https://www.betterbird.eu/</url>
+  <launchable type="desktop-id">eu.betterbird.Betterbird.desktop</launchable>
  
   <releases>
-    <release version="102.2.0" date="2022-08-23" />
+    <release version="102.2.0-bb114" date="2022-08-21" />
   </releases>
  
-  <project_group>Mozilla</project_group>
+  <project_group>Betterbird</project_group>
   <project_license>MPL-2.0</project_license>
-  <developer_name>Thunderbird Project</developer_name>
- 
+  <developer_name>Betterbird Project</developer_name>
+
   <!--
     From the official Thunderbird website
     https://www.thunderbird.net/
     https://www.thunderbird.net/features/
     https://github.com/thundernest/thunderbird-website/
     https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
+    TODO: Replace by actual Betterbird screenshots showcasing its distinctive features (e.g. multiline list view).
   --> 
   <screenshots>
     <screenshot type="default">
