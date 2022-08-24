@@ -6,3 +6,5 @@ repo/
 build/
 
 .flatpak/
+
+build-dir/
