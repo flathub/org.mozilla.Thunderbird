@@ -1,7 +1,8 @@
-# Thunderbird (Flathub)
-org.mozilla.Thunderbird (aka net.thunderbird.Thunderbird)
+# Betterbird (Flathub)
 
-[Thunderbird](https://www.thunderbird.net/) for [Flatpak](https://flatpak.org/) installation instructions are available by [clicking here to visit the Thunderbird app page on Flathub](https://flathub.org/apps/details/org.mozilla.Thunderbird).
+Betterbird is a fine-tuned version of [Mozilla Thunderbird](https://www.thunderbird.net/), Thunderbird on steroids, if you will.
+
+[Betterbird](https://betterbird.eu/) for [Flatpak](https://flatpak.org/) installation instructions are available by [clicking here to visit the Betterbird app page on Flathub](https://flathub.org/apps/details/eu.betterbird.Betterbird).
 
 ## Known issues:
 Non flatpak-packaging issues should be reported upstream at<br>
