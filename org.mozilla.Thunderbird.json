@@ -28,7 +28,7 @@
         /* Needed for accessibility */
         "--talk-name=org.a11y.Bus",
         /* Needed for detecting running instance on wayland */
-        "--own-name=org.mozilla.thunderbird.*",
+        "--own-name=org.mozilla.thunderbird_default.*",
         /* Make notifications work */
         "--talk-name=org.freedesktop.Notifications",
         /* Smartcard access - Requires flatpak >= 1.3.2 */
