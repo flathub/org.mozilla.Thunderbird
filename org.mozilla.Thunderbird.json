@@ -1,12 +1,12 @@
 {
     "app-id": "org.mozilla.Thunderbird",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "21.08",
+    "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
         "org.freedesktop.Sdk.Extension.node16",
-        "org.freedesktop.Sdk.Extension.llvm13"
+        "org.freedesktop.Sdk.Extension.llvm14"
     ],
     "command": "thunderbird",
     "rename-icon": "thunderbird",
@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
-                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2"
+                    "url": "https://pcsclite.apdu.fr/files/pcsc-lite-1.9.9.tar.bz2",
+                    "sha256": "cbcc3b34c61f53291cecc0d831423c94d437b188eb2b97b7febc08de1c914e8a"
                 }
             ]
         },
@@ -120,39 +120,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.12.tar.xz",
-                    "sha256": "744b2b37508135f8261b755a9debe6e09add421adc75bde930f6e198b70ab46e"
-                }
-            ]
-        },
-        {
-            "name": "gtk-cups-backend",
-            "buildsystem": "meson",
-            "make-args": [
-                "modules/printbackends/libprintbackend-cups.so"
-            ],
-            "no-make-install": true,
-            "post-install": [
-                "install -Dm 755 modules/printbackends/libprintbackend-cups.so -t /app/lib/gtkmodules/3.0.0/printbackends/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/core/41/41.5/sources/gtk%2B-3.24.33.tar.xz",
-                    "sha256": "588b06522e25d1579e989b6f9d8a1bdbf2fe13cde01a04e904ff346a225e7801"
-                }
-            ]
-        },
-        {
-            "name": "gtk-settings",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dm 644 gtk-settings.ini /app/etc/xdg/gtk-3.0/settings.ini"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "path": "gtk-settings.ini"
+                    "url": "https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.1.tar.xz",
+                    "sha256": "d033e6d4d6ccbf46a436c31628a4b661b36dca1f5d4174fe0173e274f4e62557"
                 }
             ]
         },
@@ -181,8 +150,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://kerberos.org/dist/krb5/1.19/krb5-1.19.3.tar.gz",
-                    "sha256": "56d04863cfddc9d9eb7af17556e043e3537d41c6e545610778676cf551b9dcd0"
+                    "url": "https://kerberos.org/dist/krb5/1.20/krb5-1.20.tar.gz",
+                    "sha256": "7e022bdd3c851830173f9faaa006a230a0e0fdad4c953e85bff4bf0da036e12f"
                 },
                 {
                     "type": "file",
@@ -225,8 +194,8 @@
             "name": "thunderbird",
             "buildsystem": "simple",
             "build-options":{
-                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node16/bin:/usr/lib/sdk/llvm13/bin",
-                "prepend-ld-library-path": "/usr/lib/sdk/llvm13/lib",
+                "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node16/bin:/usr/lib/sdk/llvm14/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm14/lib",
                 "env":{
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
