@@ -215,8 +215,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/eqrion/cbindgen.git",
-                    "tag": "v0.23.0",
-                    "commit": "798cfab52bced65a749443faa16990ec3a8e0cfe"
+                    "tag": "v0.24.3",
+                    "commit": "f43ccfc047a1a160267f32355c5e5e7154a2665a"
                 },
                 "cbindgen-sources.json"
             ]
@@ -272,6 +272,10 @@
                 {
                     "type": "file",
                     "path": "default-preferences.js"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-ftbfs-newer-cbindgen.patch"
                 },
                 {
                     "type": "script",
