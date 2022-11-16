@@ -41,7 +41,6 @@
         /* Kerberos support */
         "--filesystem=/run/.heim_org.h5l.kcm-socket",
         /* Printing support */
-        "--env=GTK_PATH=/app/lib/gtkmodules",
         "--socket=cups"
     ],
     "cleanup": [
