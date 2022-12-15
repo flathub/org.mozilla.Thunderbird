@@ -242,10 +242,6 @@
                     "path": "default-preferences.js"
                 },
                 {
-                    "type": "patch",
-                    "path": "fix-ftbfs-newer-cbindgen.patch"
-                },
-                {
                     "type": "script",
                     "dest-filename": "thunderbird-wrapper",
                     "commands": [
