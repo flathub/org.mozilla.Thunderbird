@@ -63,7 +63,7 @@
   <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
  
   <releases>
-    <release version="102.7.2" date="2023-02-07" />
+    <release version="102.8.0" date="2023-02-15" />
   </releases>
  
   <project_group>Mozilla</project_group>
