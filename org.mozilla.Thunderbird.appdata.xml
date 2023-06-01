@@ -1,44 +1,38 @@
-<!-- https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html -->
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>org.mozilla.Thunderbird</id>
+  <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <name>Thunderbird</name>
-  <!-- From the GNOME Software utility -->
-  <summary>Email, RSS and newsgroup client with integrated spam filter</summary>
-  <summary xml:lang="hu">E-mail-, RSS- és hírcsoport-ügyfél integrált levélszemétszűrővel</summary>
-  <description>
-    <!-- From the GNOME Software utility -->
-    <p>
-      Thunderbird is a full-featured email, RSS and newsgroup client that makes emailing safer, 
-      faster and easier than ever before. It supports different mail accounts (POP, IMAP, Gmail), 
-      has a simple mail account setup wizard, one-click address book, tabbed interface, an 
-      integrated learning spam filter, advanced search and indexing capabilities, and offers
-      easy organization of mails with tagging and virtual folders. It also features unrivaled 
-      extensibility.
-    </p>
-    <!-- From https://en.wikipedia.org/wiki/Mozilla_Thunderbird -->
-    <p>
-      Mozilla Thunderbird is a free and open-source cross-platform email, news, RSS, 
-      and chat client developed by the Thunderbird Project.
-    </p>
+  <summary>Thunderbird is a free and open source email, newsfeed, chat, and calendaring client</summary>
 
-    <p xml:lang="hu">
-      A Thunderbird egy teljes körű e-mail-, RSS- és hírcsoport-ügyfél, amely biztonságosabbá, 
-      gyorsabbá és egyszerűbbé teszi az e-mailezést, mint valaha. Támogatja a különböző e-mail 
-      fiókokat (POP, IMAP, Gmail), rendelkezik egy egyszerű e-mail fiók beállítási varázslóval, 
-      egy kattintásos címjegyzékkel, füles felülettel, integrált tanulási levélszemétszűrővel, 
-      fejlett keresési és indexelési lehetőségekkel, valamint egyszerű címkézési rendszerezést 
-      kínál. és virtuális mappák. Páratlan bővíthetőséget is kínál.
+  <description>
+    <!-- From https://www.thunderbird.net/en-US/about/  -->
+    <p>
+      Thunderbird is a free and open source email, newsfeed, chat, and
+      calendaring client, that’s easy to set up and customize. One of the core
+      principles of Thunderbird is the use and promotion of open standards -
+      this focus is a rejection of our world of closed platforms and services
+      that can’t communicate with each other. We want our users to have freedom
+      and choice in how they communicate.
     </p>
-    <p xml:lang="hu">
-      A Mozilla Thunderbird egy ingyenes és nyílt forráskódú, többplatformos e-mail-, hír-, 
-      RSS- és csevegés-ügyfél, amelyet a Thunderbird Project fejlesztett ki.
+    <p>
+      Thunderbird is an open source project, which means anyone can contribute
+      ideas, designs, code, and time helping fellow users.
     </p>
-    
   </description>
-  <!-- https://specifications.freedesktop.org/menu-spec/latest/apa.html -->
-  <!-- https://specifications.freedesktop.org/menu-spec/latest/apas02.html -->
+
+  <releases>
+    <release version="102.11.2" date="2023-05-27" />
+  </releases>
+
+  <keywords>
+    <keyword>mozilla</keyword>
+    <keyword>mail</keyword>
+    <keyword>email</keyword>
+    <keyword>calendar</keyword>
+  </keywords>
+
   <categories>
     <category>Calendar</category>
     <category>Chat</category>
@@ -51,32 +45,31 @@
     <category>News</category>
     <category>Office</category>
   </categories>
+
+  <provides>
+    <mediatype>message/rfc822</mediatype>
+    <mediatype>x-scheme-handler/mailto</mediatype>
+    <mediatype>text/calendar</mediatype>
+    <mediatype>text/vcard</mediatype>
+    <mediatype>text/x-vcard</mediatype>
+    <mediatype>x-scheme-handler/webcal</mediatype>
+    <mediatype>x-scheme-handler/webcals</mediatype>
+    <mediatype>x-scheme-handler/mid</mediatype>
+  </provides>
+
+  <content_rating type="oars-1.1" />
   <url type="homepage">https://www.thunderbird.net/</url>
   <url type="bugtracker">https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird</url>
-  <url type="faq">https://support.mozilla.org/kb/thunderbird-faq</url>
-  <url type="help">https://support.mozilla.org/products/thunderbird</url>
+  <url type="faq">https://support.mozilla.org/kb/thunderbird-faq/</url>
+  <url type="help">https://support.mozilla.org/products/thunderbird/</url>
   <url type="donation">https://give.thunderbird.net/</url>
-  <url type="translate">https://pontoon.mozilla.org/projects/thunderbirdnet/</url>
+  <url type="translate">https://www.thunderbird.net/en-US/get-involved/#translation</url>
   <url type="contact">https://www.thunderbird.net/contact/</url>
-  <url type="vcs-browser">https://hg.mozilla.org/comm-central/</url>
-  <url type="contribute">https://www.thunderbird.net/get-involved/</url>
-  <launchable type="desktop-id">org.mozilla.Thunderbird.desktop</launchable>
- 
-  <releases>
-    <release version="102.11.2" date="2023-05-27" />
-  </releases>
- 
+
   <project_group>Mozilla</project_group>
   <project_license>MPL-2.0</project_license>
-  <developer_name>Thunderbird Project</developer_name>
- 
-  <!--
-    From the official Thunderbird website
-    https://www.thunderbird.net/
-    https://www.thunderbird.net/features/
-    https://github.com/thundernest/thunderbird-website/
-    https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
-  --> 
+  <developer_name>MZLA Technologies, part of the Mozilla Foundation</developer_name>
+
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_light.png</image>
@@ -85,32 +78,4 @@
       <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_dark.png</image>
     </screenshot>
   </screenshots>
-
-  <suggests>
-    <id>org.libreoffice.LibreOffice</id>
-  </suggests>
- 
-  <content_rating type="oars-1.0">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">intense</content_attribute>
-    <content_attribute id="social-info">intense</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
- 
 </component>
