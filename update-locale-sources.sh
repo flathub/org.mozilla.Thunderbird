@@ -7,7 +7,7 @@ BASE_URL="https://archive.mozilla.org/pub/$PACKAGE/releases/"
 VERSION="$(grep --fixed-strings "\"url\": \"$BASE_URL" org.mozilla.Thunderbird.json | cut -d/ -f7)"
 BASE_URL+="$VERSION"
 
-OUTPUT_FILE="$PACKAGE-sources.json"
+OUTPUT_FILE="$PACKAGE-locale.json"
 
 declare -a sources
 
