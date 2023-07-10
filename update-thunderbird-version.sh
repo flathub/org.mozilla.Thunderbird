@@ -61,7 +61,7 @@ done < <(curl -Ss "$BASE_URL/SHA256SUMS" | grep "^\S\+  \(source\|$PLATFORM/xpi\
 echo -e "$source_archive\n]" >>"$SOURCES_FILE"
 
 # update releases in appdata file
-sed -ri 's@^(\s+<release version=")[^"]+(" date=")[^"]+(" />)$@'"\1$VERSION\2$RELEASE_DATE\3@" "$APPDATA_FILE"
+sed -ri 's@^(\s+<release version=")[^"]+(" date=")[^"]+("/>)$@'"\1$VERSION\2$RELEASE_DATE\3@" "$APPDATA_FILE"
 
 cat <<EOT
 The files were successfully updated to version $VERSION.

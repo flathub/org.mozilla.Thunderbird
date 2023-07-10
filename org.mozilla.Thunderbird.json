@@ -12,7 +12,8 @@
     "rename-icon": "thunderbird",
     "finish-args": [
         "// X11 + XShm access",
-        "--share=ipc", "--socket=x11",
+        "--share=ipc",
+        "--socket=x11",
         "// Wayland access",
         "--socket=wayland",
         "// OpenGL access",
@@ -53,7 +54,8 @@
         "/share/gir-1.0",
         "/share/man",
         "/man",
-        "*.la", "*.a"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         "shared-modules/dbus-glib/dbus-glib.json",
@@ -83,8 +85,12 @@
         },
         {
             "name": "autoconf-2.13",
-            "config-opts": ["--program-suffix=2.13"],
-            "cleanup": [ "*" ],
+            "config-opts": [
+                "--program-suffix=2.13"
+            ],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -95,7 +101,9 @@
         },
         {
             "name": "yasm",
-            "cleanup": [ "*" ],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -136,13 +144,13 @@
             "name": "krb5",
             "subdir": "src",
             "config-opts": [
-                    "--localstatedir=/var/lib",
-                    "--sbindir=${FLATPAK_DEST}/bin",
-                    "--disable-rpath",
-                    "--disable-static"
+                "--localstatedir=/var/lib",
+                "--sbindir=${FLATPAK_DEST}/bin",
+                "--disable-rpath",
+                "--disable-static"
             ],
             "post-install": [
-                    "install -Dm644 ../krb5.conf -t ${FLATPAK_DEST}/etc/"
+                "install -Dm644 ../krb5.conf -t ${FLATPAK_DEST}/etc/"
             ],
             "sources": [
                 {
@@ -170,13 +178,15 @@
                 "cargo --offline build --release --verbose",
                 "install -Dm 755 target/release/cbindgen -t /app/bin"
             ],
-            "build-options":{
+            "build-options": {
                 "append-path": "/usr/lib/sdk/rust-stable/bin",
-                "env":{
+                "env": {
                     "CARGO_HOME": "/run/build/cbindgen/cargo"
                 }
             },
-            "cleanup": [ "*" ],
+            "cleanup": [
+                "*"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -190,10 +200,10 @@
         {
             "name": "thunderbird",
             "buildsystem": "simple",
-            "build-options":{
+            "build-options": {
                 "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/node16/bin:/usr/lib/sdk/llvm15/bin",
                 "prepend-ld-library-path": "/usr/lib/sdk/llvm15/lib",
-                "env":{
+                "env": {
                     "TERM": "linux",
                     "CARGO_HOME": "/run/build/Thunderbird/cargo",
                     "npm_config_nodedir": "/usr/lib/sdk/node16"

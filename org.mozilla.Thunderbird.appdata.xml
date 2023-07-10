@@ -23,7 +23,7 @@
   </description>
 
   <releases>
-    <release version="102.13.0" date="2023-07-05" />
+    <release version="102.13.0" date="2023-07-05"/>
   </releases>
 
   <keywords>
@@ -57,7 +57,7 @@
     <mediatype>x-scheme-handler/mid</mediatype>
   </provides>
 
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <url type="homepage">https://www.thunderbird.net/</url>
   <url type="bugtracker">https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird</url>
   <url type="faq">https://support.mozilla.org/kb/thunderbird-faq/</url>
