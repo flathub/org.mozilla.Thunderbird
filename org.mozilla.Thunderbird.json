@@ -11,34 +11,34 @@
     "command": "thunderbird",
     "rename-icon": "thunderbird",
     "finish-args": [
-        /* X11 + XShm access */
+        "// X11 + XShm access",
         "--share=ipc", "--socket=x11",
-        /* Wayland access */
+        "// Wayland access",
         "--socket=wayland",
-        /* OpenGL access */
+        "// OpenGL access",
         "--device=dri",
-        /* Needs to talk to the network: */
+        "// Needs to talk to the network:",
         "--share=network",
-        /* Play sounds */
+        "// Play sounds",
         "--socket=pulseaudio",
-        /* Make thunderbird configuration persistent */
+        "// Make thunderbird configuration persistent",
         "--persist=.thunderbird",
-        /* Access to Downloads (default path for downloading files) */
+        "// Access to Downloads (default path for downloading files)",
         "--filesystem=xdg-download:rw",
-        /* Needed for accessibility */
+        "// Needed for accessibility",
         "--talk-name=org.a11y.Bus",
-        /* Needed for detecting running instance on wayland */
+        "// Needed for detecting running instance on wayland",
         "--own-name=org.mozilla.thunderbird_default.*",
-        /* Smartcard access - Requires flatpak >= 1.3.2 */
+        "// Smartcard access - Requires flatpak >= 1.3.2",
         "--socket=pcsc",
-        /* Older versions will fail with above permission */
+        "// Older versions will fail with above permission",
         "--require-version=0.10.3",
-        /* GPG support */
+        "// GPG support",
         "--filesystem=~/.gnupg",
         "--filesystem=xdg-run/gnupg:ro",
-        /* Kerberos support */
+        "// Kerberos support",
         "--filesystem=/run/.heim_org.h5l.kcm-socket",
-        /* Printing support */
+        "// Printing support",
         "--socket=cups"
     ],
     "cleanup": [
