@@ -224,6 +224,20 @@
                 "install -Dm644 org.mozilla.Thunderbird.appdata.xml /app/share/metainfo/org.mozilla.Thunderbird.appdata.xml"
             ],
             "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://archive.mozilla.org/pub/thunderbird/releases/102.13.0/source/thunderbird-102.13.0.source.tar.xz",
+                    "sha256": "7a7208cab2810231c2842334a2ffb37d704934dd212011395aec3609751affbc",
+                    "x-checker-data": {
+                        "is-main-source": true,
+                        "source-id": "thunderbird-base",
+                        "type": "json",
+                        "url": "https://product-details.mozilla.org/1.0/thunderbird.json",
+                        "version-query": ".releases | keys | map(sub(\"^thunderbird-\"; \"\") | select(. | test(\"^\\\\d+(\\\\.\\\\d+)*$\")) | split(\".\") | map(tonumber)) | sort | .[-1] | join(\".\")",
+                        "timestamp-query": ".releases | to_entries[] | select(.key == \"thunderbird-\" + $version).value.date",
+                        "url-query": "\"https://archive.mozilla.org/pub/thunderbird/releases/\" + $version + \"/source/thunderbird-\" + $version + \".source.tar.xz\""
+                    }
+                },
                 "thunderbird-sources.json",
                 {
                     "type": "file",
