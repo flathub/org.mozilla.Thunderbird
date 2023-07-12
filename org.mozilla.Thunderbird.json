@@ -180,8 +180,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/mozilla/cbindgen.git",
-                    "tag": "v0.24.6"
+                    "url": "https://github.com/eqrion/cbindgen.git",
+                    "tag": "v0.24.3",
+                    "commit": "f43ccfc047a1a160267f32355c5e5e7154a2665a"
                 },
                 "cbindgen-sources.json"
             ]
