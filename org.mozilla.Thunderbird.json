@@ -182,7 +182,6 @@
                     "type": "git",
                     "url": "https://github.com/mozilla/cbindgen.git",
                     "tag": "v0.24.6",
-                    "commit": "cbd3541"
                 },
                 "cbindgen-sources.json"
             ]
